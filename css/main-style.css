@@ -123,12 +123,12 @@ body {
 	margin: 0px 0px 30px 0px;
 }
 
-.header_row {
+/* .header__column {
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-.header_text {
+.header__text {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -142,7 +142,7 @@ body {
 	font-size: 50px;
 }
 
-.header_button {
+.header__button {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -161,7 +161,7 @@ body {
 }
 
 /* содержимое домашней страницы */
-.home_page {
+.home {
 	flex: 1 1 auto;
 
 	background-color: black;
@@ -170,7 +170,7 @@ body {
 	color: white;
 }
 
-.home_page_row {
+.home__row {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -180,7 +180,7 @@ body {
 	padding: 10px 0px 0px 0px;
 }
 
-.data_text {
+.home__text {
 	margin: 0px 20px 0px 20px;
 
 	font-size: 40px;
@@ -191,23 +191,23 @@ body {
 	line-height: 50px;
 }
 
-.data_text::first-letter {
+.home__text::first-letter {
 	font-size: 60px;
 	color: #308b42;
 }
 
-.home_page_work_place {
+.home__work-place {
 	padding: 20px 0px 30px 0px;
 
 	text-align: center;
 	font-size: 40px;
 }
 
-.home_page_work_place p {
+.home__work-place p {
 	margin: 30px 0 30px 0;
 }
 
-.home_page_work_place p::first-letter {
+.home__work-place p::first-letter {
 	font-size: 60px;
 	color: #308b42;
 }
@@ -220,7 +220,7 @@ body {
 	padding: 10px;
 }
 
-.footer_row {
+.footer__column{
 	display: flex;
 	flex-direction: column;
 	height: 150px;
@@ -228,39 +228,39 @@ body {
 	align-items: center;
 }
 
-.footer_data {
+.footer__social {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-.footer_link {
+.footer__row {
 	padding: 10px;
 }
 
-.footer_link_line {
+.footer__link {
 	font-size: 20px;
 }
 
-.footer_line {
+.footer__span {
 	color: #308b42;
 	margin: 0px 5px;
 }
 
-.footer_link_line:link {
+.footer__link:link {
 	text-decoration: none;
 	color: #308b42;
 }
 
-.footer_link_line:visited {
+.footer__link:visited {
 	color: #308b42;
 }
 
-.footer_link_line:hover {
+.footer__link:hover {
 	color: white;
 }
 
-.footer_link_social {
+.footer_social-link {
 	padding: 10px 10px 0px 10px;
 }

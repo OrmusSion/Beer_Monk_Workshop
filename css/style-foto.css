@@ -1,19 +1,19 @@
 /* стили всех фото */
 
 /* фото на ссылке */
-.hop-line-img {
+.header__img {
 	width: 200px;
 	padding: 0px 20px;
 }
 
 /* ссылки */
-.button_img {
+.header__but-img {
 	height: 60px;
 	background-color: #308b42;
 	border-radius: 50%;
 }
 
-.button_img:hover {
+.header__but-img:hover {
 	background-color: white;
 	/* height: 60px; */
 	/* box-shadow: 0 0 10px white; */
@@ -21,13 +21,13 @@
 }
 
 /* фото монаха */
-.data-img {
+.home__img {
 	width: 300px;
 	padding: 20px 20px;
 }
 
 /* фото в тексте */
-.data_text_foto {
+.home__text-img {
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -35,7 +35,7 @@
 }
 
 /* фото рабочего места */
-.work_place_img {
+.home__work-place-img {
 	width: 100%;
 	max-width: 500px;
 	border-radius: 50px;
@@ -43,22 +43,22 @@
 	transition: 1.5s;
 }
 
-.work_place_img:hover {
+.home__work-place-img:hover {
 	transform: scale(2);
 }
 
 /* низ страницы */
-.footer_img {
+.footer__img {
 	width: 60px;
 	height: 60px;
 }
 
-.footer_link_img {
+.footer__img-link {
 	width: 30px;
 	height: 30px;
 }
 
-.footer_link_img:hover {
+.footer__img-link:hover {
 	background-color: white;
 	box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
 	border-radius: 50px;
