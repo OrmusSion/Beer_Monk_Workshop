@@ -1,4 +1,5 @@
 @import "_nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=swap');
 
 // @import "_foto_style";
 // @import "_product_style";
@@ -6,7 +7,7 @@
 // @import "_contact_style";
 
 body {
-	color: rgb(0, 0, 0);
+	color: black;
 	font-family: Orbitron, cursive;
 	padding: 20px;
 }
@@ -17,4 +18,61 @@ body {
 
 	min-height: calc(100vh - 25px);
 	overflow: hidden;
+}
+
+.container {
+	max-width: 1500px;
+	margin: 0px auto;
+}
+
+.header {
+	background-color: black;
+	border-radius: 30px;
+
+	height: 180px;
+	margin: 0px 0px 30px 0px;
+
+	&__text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		height: 60px;
+		margin: 0px 0px 25px 0px;
+		padding: 15px 0px 0px 0px;
+
+		color: white;
+		font-size: 50px;
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+		height: 70px;
+
+		background-color: #024d39;
+		border-radius: 100px;
+		
+		box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+	}
+
+	&__img {
+		width: 200px;
+		padding: 0px 20px;
+	}
+
+	&__but-img {
+		height: 60px;
+		background-color: #308b42;
+		border-radius: 50%;
+		&:hover {
+			background-color: white;
+			box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+		}
+	}
 }
