@@ -1,16 +1,23 @@
 @import "_nullstyle";
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=swap');
 
-// @import "_foto_style";
-// @import "_product_style";
-// @import "_tools_style";
-// @import "_contact_style";
-
-$bord-rad: 30px;
+$bord-rad: 40px;
 $box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
 $col-black: #000;
 $col-green: #308b42;
 $col-white: #fff;
+
+%link-hov {	
+	box-shadow: $box-shad;
+	background-color: $col-white;
+}
+
+%main-space {
+	background-color: $col-black;
+	border-radius: $bord-rad;
+	color: $col-white;	
+}
 
 body {
 	color: black;
@@ -77,19 +84,13 @@ body {
 		border-radius: 50%;
 
 		&:hover {
-			background-color: $col-white;
-			box-shadow: $box-shad;
+			@extend %link-hov;
 		}
 	}
 }
 
-.home {
-	flex: 1 1 auto;
-
-	background-color: $col-black;
-	border-radius: 30px;
-
-	color: $col-white;
+.home {	
+	@extend %main-space;
 
 	&__row {
 		display: flex;
@@ -218,9 +219,8 @@ body {
 		height: 30px;
 
 		&:hover {
-			background-color: $col-white;
-			box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
-			border-radius: 50px;
+			@extend %link-hov;
+			border-radius: $bord-rad;
 		}
 	}
 }
