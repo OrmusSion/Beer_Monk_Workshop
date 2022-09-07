@@ -105,7 +105,7 @@ body {
   height: 60px;
   margin: 0px 0px 25px 0px;
   padding: 15px 0px 0px 0px;
-  color: white;
+  color: #fff;
   font-size: 50px;
 }
 .header__button {
@@ -129,6 +129,121 @@ body {
   border-radius: 50%;
 }
 .header__but-img:hover {
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.home {
+  flex: 1 1 auto;
+  background-color: #000;
+  border-radius: 30px;
+  color: #fff;
+}
+.home__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+.home__img {
+  width: 300px;
+  padding: 20px 20px;
+}
+.home__text {
+  margin: 0px 20px 0px 20px;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  line-height: 50px;
+}
+.home__text:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.home__text-img {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  padding: 5px;
+}
+.home__work-place {
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+.home__work-place p {
+  margin: 30px 0 30px 0;
+}
+.home__work-place p:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.home__work-place-img {
+  max-width: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px #308b42;
+  transition: 1.5s;
+}
+.home__work-place-img:hover {
+  transform: scale(2);
+}
+
+.footer {
+  background-color: #000;
+  border-radius: 30px;
+  margin: 30px 0px 10px 0px;
+  padding: 10px;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img {
+  width: 60px;
+  height: 60px;
+}
+.footer__row {
+  padding: 10px;
+}
+.footer__span {
+  color: #308b42;
+  margin: 0px 5px;
+}
+.footer__link {
+  font-size: 20px;
+}
+.footer__link:link {
+  text-decoration: none;
+  color: #308b42;
+}
+.footer__link:visited {
+  color: #308b42;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__link-social {
+  padding: 10px 10px 0px 10px;
+}
+.footer__img-link {
+  width: 30px;
+  height: 30px;
+}
+.footer__img-link:hover {
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
 }
