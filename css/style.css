@@ -116,7 +116,7 @@ body {
   align-items: center;
   height: 70px;
   background-color: #024d39;
-  border-radius: 100px;
+  border-radius: 30px;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
 .header__img {
