@@ -5,3 +5,16 @@
 // @import "_tools_style";
 // @import "_contact_style";
 
+body {
+	color: rgb(0, 0, 0);
+	font-family: Orbitron, cursive;
+	padding: 20px;
+}
+
+.main__block {
+	display: flex;
+	flex-direction: column;
+
+	min-height: calc(100vh - 25px);
+	overflow: hidden;
+}
