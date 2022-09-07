@@ -1,0 +1,9 @@
+/* содержимое страницы инструментов */
+.tools {
+	flex: 1 1 auto;
+
+	background-color: black;
+	border-radius: 30px;
+
+	color: white;
+}

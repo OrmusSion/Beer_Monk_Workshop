@@ -1,0 +1,10 @@
+/* содержимое страницы изделий */
+.products {
+	flex: 1 1 auto;
+
+	background-color: black;
+	border-radius: 30px;
+
+	color: white;
+	/* border: 5px solid black; */
+}
