@@ -92,7 +92,7 @@ body {
 }
 
 .header {
-  background-color: black;
+  background-color: #000;
   border-radius: 30px;
   height: 180px;
   margin: 0px 0px 30px 0px;
@@ -130,5 +130,5 @@ body {
 }
 .header__but-img:hover {
   background-color: white;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }

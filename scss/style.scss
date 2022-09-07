@@ -6,6 +6,10 @@
 // @import "_tools_style";
 // @import "_contact_style";
 
+$bord-rad:30px;
+$box-shad:0 0 50px rgba(255, 255, 255, 0.7);
+$back-col:#000;
+
 body {
 	color: black;
 	font-family: Orbitron, cursive;
@@ -26,7 +30,7 @@ body {
 }
 
 .header {
-	background-color: black;
+	background-color: $back-col;
 	border-radius: 30px;
 
 	height: 180px;
@@ -58,7 +62,7 @@ body {
 		background-color: #024d39;
 		border-radius: 100px;
 		
-		box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+		box-shadow: $box-shad;
 	}
 
 	&__img {
@@ -72,7 +76,7 @@ body {
 		border-radius: 50%;
 		&:hover {
 			background-color: white;
-			box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+			box-shadow: $box-shad;
 		}
 	}
 }
