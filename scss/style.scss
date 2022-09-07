@@ -6,9 +6,10 @@
 // @import "_tools_style";
 // @import "_contact_style";
 
-$bord-rad:30px;
-$box-shad:0 0 50px rgba(255, 255, 255, 0.7);
-$back-col:#000;
+$bord-rad: 30px;
+$box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
+$back-col-black: #000;
+$back-col-green: #308b42;
 
 body {
 	color: black;
@@ -30,12 +31,11 @@ body {
 }
 
 .header {
-	background-color: $back-col;
-	border-radius: 30px;
-
+	background-color: $back-col-black;
+	border-radius: $bord-rad;
 	height: 180px;
 	margin: 0px 0px 30px 0px;
-
+	
 	&__text {
 		display: flex;
 		flex-direction: row;
@@ -60,8 +60,8 @@ body {
 		height: 70px;
 
 		background-color: #024d39;
-		border-radius: 100px;
-		
+		border-radius: $bord-rad;
+
 		box-shadow: $box-shad;
 	}
 
@@ -72,11 +72,13 @@ body {
 
 	&__but-img {
 		height: 60px;
-		background-color: #308b42;
+		background-color: $back-col-green;
 		border-radius: 50%;
+
 		&:hover {
 			background-color: white;
 			box-shadow: $box-shad;
 		}
 	}
 }
+
