@@ -7,6 +7,7 @@
 	<title>Beer Monk Contact</title>
 
 	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/contact_style.css" />
 </head>
 
 <body>
@@ -51,35 +52,35 @@
 
 		<div class="contact">
 			<div class="container">
-				<div class="contact_col">
-					<div class="about">
+				<div class="contact__area">
+					<div class="contact__title">
 						<p>написать что-то про себя
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque assumenda recusandae at nam
 							debitis quasi dignissimos perferendis dolore soluta commodi deserunt unde ipsum, est
 							accusantium nisi. Saepe aperiam expedita sit!
 						</p>
 					</div>
-					<div class="contact_row">
+					<div class="contact__column">
 						<div>
 							<p>To contact me fill the forms</p>
 						</div>
-						<form action="#" method="post" enctype="multipart/form-data" class="contact_form">
+						<form action="#" method="post" enctype="multipart/form-data" class="contact__form">
 							<div>
 								<input type="text" name="username" placeholder="Enter your name" tabindex="1" required
-									class="name_area">
+									class="contact__area-name">
 							</div>
 							<br>
 							<div>
 								<input type="email" name="usermail" placeholder="Enter your email" tabindex="2" required
-									class="mail_area">
+									class="contact__area-email">
 							</div>
 							<br>
-							<textarea name="text" placeholder="Enter your message" tabindex="3" class="contact_area"
+							<textarea name="text" placeholder="Enter your message" tabindex="3" class="contact__area-text"
 								required cols="50" rows="13"></textarea>
 							<br>
 							<br>
-							<button type="submit" tabindex="4" class="contact_button">Enter</button>
-							<button type="reset" tabindex="5" class="contact_button">Clear</button>
+							<button type="submit" tabindex="4" class="contact__submit">Enter</button>
+							<button type="reset" tabindex="5" class="contact__reset">Clear</button>
 						</form>
 					</div>
 				</div>

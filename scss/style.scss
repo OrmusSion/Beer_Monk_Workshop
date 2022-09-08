@@ -1,11 +1,20 @@
-@import "_nullstyle";
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=swap');
+
+@font-face {
+	font-family: 'SITF';
+	src: url('../fonts/Somewhere In Time Font.eot');
+	src: local('☺'), url('../fonts/Somewhere In Time Font.woff') format('woff'), url('../fonts/Somewhere In Time Font.ttf') format('truetype'), url('../fonts/Somewhere In Time Font.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import "_nullstyle";
 
 $bord-rad: 40px;
 $box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
 $col-black: #000;
 $col-green: #308b42;
+$col-darkgreen: #024d39;
 $col-white: #fff;
 
 %link-hov {	
@@ -14,22 +23,26 @@ $col-white: #fff;
 }
 
 %main-space {
+	flex: 1 1 auto;
+
 	background-color: $col-black;
 	border-radius: $bord-rad;
-	color: $col-white;	
+	color: $col-white;		
 }
 
-body {
-	color: black;
+body {	
 	font-family: Orbitron, cursive;
+	// font-family: 'SITF';
 	padding: 20px;
+	height: 100%;
 }
 
 .main__block {
 	display: flex;
 	flex-direction: column;
 
-	min-height: calc(100vh - 25px);
+	min-height: calc(100vh - 20px);
+	// height: 100%;
 	overflow: hidden;
 }
 
@@ -67,7 +80,7 @@ body {
 
 		height: 70px;
 
-		background-color: #024d39;
+		background-color: $col-darkgreen;
 		border-radius: $bord-rad;
 
 		box-shadow: $box-shad;
@@ -79,7 +92,7 @@ body {
 	}
 
 	&__but-img {
-		height: 60px;
+		height: 50px;
 		background-color: $col-green;
 		border-radius: 50%;
 
@@ -90,7 +103,7 @@ body {
 }
 
 .home {	
-	@extend %main-space;
+	@extend %main-space;	
 
 	&__row {
 		display: flex;
@@ -161,7 +174,7 @@ body {
 .footer {
 	background-color: $col-black;
 	border-radius: $bord-rad;
-	margin: 30px 0px 10px 0px;
+	margin: 30px 0px 30px 0px;
 	padding: 10px;
 
 	&__column {

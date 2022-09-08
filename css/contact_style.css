@@ -1,0 +1,343 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=swap");
+@font-face {
+  font-family: "SITF";
+  src: url("../fonts/Somewhere In Time Font.eot");
+  src: local("☺"), url("../fonts/Somewhere In Time Font.woff") format("woff"), url("../fonts/Somewhere In Time Font.ttf") format("truetype"), url("../fonts/Somewhere In Time Font.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.footer__img-link:hover, .header__but-img:hover {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+  background-color: #fff;
+}
+
+.contact, .home {
+  flex: 1 1 auto;
+  background-color: #000;
+  border-radius: 40px;
+  color: #fff;
+}
+
+body {
+  font-family: Orbitron, cursive;
+  padding: 20px;
+  height: 100%;
+}
+
+.main__block {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 20px);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.header {
+  background-color: #000;
+  border-radius: 40px;
+  height: 180px;
+  margin: 0px 0px 30px 0px;
+}
+.header__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 0px 0px 25px 0px;
+  padding: 15px 0px 0px 0px;
+  color: #fff;
+  font-size: 50px;
+}
+.header__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #024d39;
+  border-radius: 40px;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+.header__img {
+  width: 200px;
+  padding: 0px 20px;
+}
+.header__but-img {
+  height: 60px;
+  background-color: #308b42;
+  border-radius: 50%;
+}
+.home__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+.home__img {
+  width: 300px;
+  padding: 20px 20px;
+}
+.home__text {
+  margin: 0px 20px 0px 20px;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  line-height: 50px;
+}
+.home__text:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.home__text-img {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  padding: 5px;
+}
+.home__work-place {
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+.home__work-place p {
+  margin: 30px 0 30px 0;
+}
+.home__work-place p:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.home__work-place-img {
+  max-width: 500px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px #308b42;
+  transition: 1.5s;
+}
+.home__work-place-img:hover {
+  transform: scale(2);
+}
+
+.footer {
+  background-color: #000;
+  border-radius: 40px;
+  margin: 30px 0px 30px 0px;
+  padding: 10px;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img {
+  width: 60px;
+  height: 60px;
+}
+.footer__row {
+  padding: 10px;
+}
+.footer__span {
+  color: #308b42;
+  margin: 0px 5px;
+}
+.footer__link {
+  font-size: 20px;
+}
+.footer__link:link {
+  text-decoration: none;
+  color: #308b42;
+}
+.footer__link:visited {
+  color: #308b42;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__link-social {
+  padding: 10px 10px 0px 10px;
+}
+.footer__img-link {
+  width: 30px;
+  height: 30px;
+}
+.footer__img-link:hover {
+  border-radius: 40px;
+}
+
+.contact__area {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 30px 0px;
+}
+
+.contact__title {
+  padding: 25px 0px 25px 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact__column {
+  width: 600px;
+  margin: 0px auto;
+  padding: 0px 0px 15px 0px;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #024d39;
+}
+.contact__column p {
+  margin: 20px 0px 20px 0px;
+  font-size: 35px;
+}
+
+.contact__area-name {
+  width: 450px;
+  padding: 3px 3px 3px 10px;
+  font-size: 15px;
+  text-align: center;
+  border: 3px solid black;
+}
+.contact__area-name:focus {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.contact__area-email {
+  width: 450px;
+  padding: 3px 3px 3px 10px;
+  font-size: 15px;
+  text-align: center;
+  border: 3px solid black;
+}
+.contact__area-email:focus {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.contact__area-text {
+  width: 450px;
+  height: 200px;
+  padding: 5px 5px 5px 10px;
+  resize: none;
+  font-size: 17px;
+  text-align: center;
+  border: 3px solid black;
+}
+.contact__area-text:focus {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.contact__submit {
+  margin: 10px 30px;
+  padding: 5px 30px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 800;
+  background-color: #308b42;
+}
+.contact__submit:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.contact__reset {
+  margin: 10px 30px;
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 800;
+  background-color: #308b42;
+}
+.contact__reset:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
