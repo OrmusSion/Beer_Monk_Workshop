@@ -106,7 +106,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0px auto;
 }
 
@@ -114,7 +114,7 @@ body {
   background-color: #000;
   border-radius: 40px;
   height: 180px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 45px 0px;
 }
 .header__text {
   display: flex;
@@ -127,19 +127,30 @@ body {
   color: #fff;
   font-size: 50px;
 }
+.header__text::before {
+  content: "|";
+  color: #308b42;
+  padding: 0px 10px 0px 0px;
+}
+.header__text::after {
+  content: "|";
+  color: #308b42;
+  padding: 0px 0px 0px 10px;
+}
 .header__button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 20px 0px 20px;
   height: 70px;
   background-color: #024d39;
   border-radius: 40px;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
 .header__img {
-  width: 200px;
+  width: 230px;
   padding: 0px 20px;
 }
 .header__but-img {
@@ -172,11 +183,10 @@ body {
   font-size: 60px;
   color: #308b42;
 }
-.home__text-img {
-  width: 55px;
-  height: 55px;
+.home__text::after {
+  content: url(/img/hi-hop.png);
   position: absolute;
-  padding: 5px;
+  padding: 0px 0px 0px 20px;
 }
 .home__work-place {
   padding: 20px 0px 30px 0px;
