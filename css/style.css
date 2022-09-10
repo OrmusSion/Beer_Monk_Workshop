@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.footer__img-link:hover, .header__but-img:hover {
+.footer__img-link:hover, .header__nav-img:hover {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
   background-color: #fff;
 }
@@ -99,9 +99,7 @@ body {
   color: #fff;
 }
 
-.main__block {
-  display: flex;
-  flex-direction: column;
+.page {
   min-height: calc(100vh - 20px);
   overflow: hidden;
 }
@@ -117,36 +115,32 @@ body {
   height: 180px;
   margin: 0px 0px 45px 0px;
 }
-.header__text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.header__title {
+  text-align: center;
   height: 60px;
   margin: 0px 0px 25px 0px;
   padding: 15px 0px 0px 0px;
   font-size: 50px;
 }
-.header__text::before {
+.header__title::before {
   content: "«";
   color: #fff;
   padding: 0px 10px 0px 0px;
 }
-.header__text::after {
+.header__title::after {
   content: "»";
   color: #fff;
   padding: 0px 0px 0px 10px;
 }
-.header__text:hover::before, .header__text:hover:after {
+.header__title:hover::before, .header__title:hover:after {
   color: #308b42;
 }
-.header__button {
+.header__buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 0px 20px;
+  width: 100%;
   height: 70px;
   background-color: #024d39;
   border-radius: 40px;
@@ -156,11 +150,18 @@ body {
   width: 230px;
   padding: 0px 20px;
 }
-.header__but-img {
+.header__nav-img {
   height: 50px;
   background-color: #308b42;
   border-radius: 50%;
 }
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .home__row {
   display: flex;
   align-items: center;
@@ -184,7 +185,7 @@ body {
   color: #308b42;
 }
 .home__text::after {
-  content: url(/img/hi-hop.png);
+  content: url("/img/hi-hop.png");
   position: absolute;
   padding: 0px 0px 0px 20px;
 }

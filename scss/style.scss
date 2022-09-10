@@ -27,7 +27,7 @@ $col-white: #fff;
 
 	background-color: $col-black;
 	border-radius: $bord-rad;
-	color: $col-white;	
+	color: $col-white;
 }
 
 body {
@@ -37,15 +37,12 @@ body {
 	height: 100%;
 	color: #fff;
 
+	// border: 2px solid red;
 	// background-color: #000;
 }
 
-.main__block {
-	display: flex;
-	flex-direction: column;
-
+.page {
 	min-height: calc(100vh - 20px);
-	// height: 100%;
 	overflow: hidden;
 }
 
@@ -60,17 +57,14 @@ body {
 	height: 180px;
 	margin: 0px 0px 45px 0px;
 
-	&__text {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	&__title {
+		text-align: center;
 
 		height: 60px;
 		margin: 0px 0px 25px 0px;
 		padding: 15px 0px 0px 0px;
-		
-		font-size: 50px;	
+
+		font-size: 50px;
 
 		&::before {
 			content: "«";
@@ -84,19 +78,20 @@ body {
 			padding: 0px 0px 0px 10px;
 		}
 
-		&:hover::before, &:hover:after {
+		&:hover::before,
+		&:hover:after {
 			color: $col-green;
 		}
 	}
 
-	&__button {
+	&__buttons {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0px 20px 0px 20px;
 
+		align-items: center;
+
+		width: 100%;
 		height: 70px;
 
 		background-color: $col-darkgreen;
@@ -110,7 +105,7 @@ body {
 		padding: 0px 20px;
 	}
 
-	&__but-img {
+	&__nav-img {
 		height: 50px;
 		background-color: $col-green;
 		border-radius: 50%;
@@ -119,6 +114,13 @@ body {
 			@extend %link-hov;
 		}
 	}
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .home {
@@ -152,7 +154,9 @@ body {
 		}
 
 		&::after {
-			content: url(/img/hi-hop.png);
+			content: url("/img/hi-hop.png");
+			// content: "";
+			// background: url("img/hi-hop.png") 100% 100%;
 			position: absolute;
 			padding: 0px 0px 0px 20px;
 		}
@@ -191,7 +195,7 @@ body {
 	border-radius: $bord-rad;
 	margin: 30px 0px 30px 0px;
 	padding: 10px 0px 10px 0px;
-	text-align: center;	
+	text-align: center;
 
 	&__column {
 		height: 140px;
@@ -201,7 +205,7 @@ body {
 
 	&__img {
 		width: 60px;
-		height: 60px;		
+		height: 60px;
 	}
 
 	&__row {
@@ -234,9 +238,9 @@ body {
 	}
 
 	&__social {
-		display: flex;		
+		display: flex;
 		justify-content: center;
-		align-items: center;		
+		align-items: center;
 		// border: 2px solid red;
 	}
 
