@@ -17,7 +17,7 @@ $col-green: #308b42;
 $col-darkgreen: #024d39;
 $col-white: #fff;
 
-%link-hov {	
+%link-hov {
 	box-shadow: $box-shad;
 	background-color: $col-white;
 }
@@ -27,10 +27,10 @@ $col-white: #fff;
 
 	background-color: $col-black;
 	border-radius: $bord-rad;
-	color: $col-white;		
+	color: $col-white;
 }
 
-body {	
+body {
 	font-family: Orbitron, cursive;
 	// font-family: 'SITF';
 	padding: 20px;
@@ -69,6 +69,18 @@ body {
 
 		color: $col-white;
 		font-size: 50px;
+
+		&::before {
+			content: "|";
+			color: $col-green;
+			padding: 0px 10px 0px 10px;
+		}
+
+		&::after {
+			content: "|";
+			color: $col-green;
+			padding: 0px 10px 0px 10px;
+		}
 	}
 
 	&__button {
@@ -102,8 +114,8 @@ body {
 	}
 }
 
-.home {	
-	@extend %main-space;	
+.home {
+	@extend %main-space;
 
 	&__row {
 		display: flex;
@@ -135,11 +147,10 @@ body {
 			color: $col-green;
 		}
 
-		&-img {
-			width: 55px;
-			height: 55px;
+		&::after {
+			content: url(/img/hi-hop.png);
 			position: absolute;
-			padding: 5px;
+			padding: 0px 0px 0px 20px;
 		}
 	}
 

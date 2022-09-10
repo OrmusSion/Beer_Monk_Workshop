@@ -127,6 +127,16 @@ body {
   color: #fff;
   font-size: 50px;
 }
+.header__text::before {
+  content: "|";
+  color: #308b42;
+  padding: 0px 10px 0px 10px;
+}
+.header__text::after {
+  content: "|";
+  color: #308b42;
+  padding: 0px 10px 0px 10px;
+}
 .header__button {
   display: flex;
   flex-direction: row;
@@ -172,11 +182,10 @@ body {
   font-size: 60px;
   color: #308b42;
 }
-.home__text-img {
-  width: 55px;
-  height: 55px;
+.home__text::after {
+  content: url(/img/hi-hop.png);
   position: absolute;
-  padding: 5px;
+  padding: 0px 0px 0px 20px;
 }
 .home__work-place {
   padding: 20px 0px 30px 0px;
