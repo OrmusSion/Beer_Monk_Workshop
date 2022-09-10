@@ -96,6 +96,7 @@ body {
   font-family: Orbitron, cursive;
   padding: 20px;
   height: 100%;
+  color: #fff;
 }
 
 .main__block {
@@ -124,17 +125,16 @@ body {
   height: 60px;
   margin: 0px 0px 25px 0px;
   padding: 15px 0px 0px 0px;
-  color: #fff;
   font-size: 50px;
 }
 .header__text::before {
-  content: "|";
-  color: #308b42;
+  content: "«";
+  color: #fff;
   padding: 0px 10px 0px 0px;
 }
 .header__text::after {
-  content: "|";
-  color: #308b42;
+  content: "»";
+  color: #fff;
   padding: 0px 0px 0px 10px;
 }
 .header__button {
@@ -160,9 +160,6 @@ body {
 }
 .home__row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   padding: 10px 0px 0px 0px;
 }
@@ -394,4 +391,33 @@ body {
 
 .list_02 li:hover::before {
   background-color: red;
+}
+
+.test_row {
+  display: none;
+}
+
+.testing {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  line-height: 50px;
+}
+.testing__te1 {
+  display: inline-flex;
+  color: red;
+  border: 2px solid black;
+}
+.testing__te2 {
+  color: aqua;
+  border: 2px solid black;
+}
+.testing__te3 {
+  color: gold;
+  border: 2px solid black;
+}
+.testing__te4 {
+  display: flex;
+  color: darkblue;
+  border: 2px solid black;
 }

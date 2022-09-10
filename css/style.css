@@ -96,6 +96,7 @@ body {
   font-family: Orbitron, cursive;
   padding: 20px;
   height: 100%;
+  color: #fff;
 }
 
 .main__block {
@@ -124,18 +125,20 @@ body {
   height: 60px;
   margin: 0px 0px 25px 0px;
   padding: 15px 0px 0px 0px;
-  color: #fff;
   font-size: 50px;
 }
 .header__text::before {
-  content: "|";
-  color: #308b42;
+  content: "«";
+  color: #fff;
   padding: 0px 10px 0px 0px;
 }
 .header__text::after {
-  content: "|";
-  color: #308b42;
+  content: "»";
+  color: #fff;
   padding: 0px 0px 0px 10px;
+}
+.header__text:hover::before, .header__text:hover:after {
+  color: #308b42;
 }
 .header__button {
   display: flex;
@@ -160,9 +163,6 @@ body {
 }
 .home__row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   padding: 10px 0px 0px 0px;
 }
@@ -228,8 +228,6 @@ body {
 }
 .footer__row {
   padding: 10px;
-  display: flex;
-  align-items: center;
 }
 .footer__span {
   font-size: 25px;
@@ -264,4 +262,7 @@ body {
 }
 .footer__img-link:hover {
   border-radius: 40px;
+}
+.footer__created {
+  color: #308b42;
 }

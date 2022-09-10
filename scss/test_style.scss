@@ -136,3 +136,46 @@
 .list_02 li:hover::before {
 	background-color: red;
 }
+
+.test_row {
+	display: none;
+}
+
+.testing {
+	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	line-height: 50px;
+
+	// display:inline;
+	
+	// display: flex;
+	// flex-direction: column;
+	// flex-wrap: wrap;
+
+
+	&__te1 {
+		display:inline-flex;
+		
+		color: red;
+		border: 2px solid black;
+	}
+
+	&__te2 {
+		color:aqua;
+		border: 2px solid black;
+	}
+
+	&__te3 {
+		color:gold;
+		border: 2px solid black;		
+	}
+
+	&__te4 {
+		display: flex;
+		color: darkblue;
+		border: 2px solid black;
+	}
+
+}
+

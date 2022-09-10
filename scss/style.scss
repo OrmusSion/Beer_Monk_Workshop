@@ -35,7 +35,7 @@ body {
 	// font-family: 'SITF';
 	padding: 20px;
 	height: 100%;
-	
+	color: #fff;
 }
 
 .main__block {
@@ -67,20 +67,23 @@ body {
 		height: 60px;
 		margin: 0px 0px 25px 0px;
 		padding: 15px 0px 0px 0px;
-
-		color: $col-white;
-		font-size: 50px;
+		
+		font-size: 50px;	
 
 		&::before {
-			content: "|";
-			color: $col-green;
+			content: "«";
+			color: $col-white;
 			padding: 0px 10px 0px 0px;
 		}
 
 		&::after {
-			content: "|";
-			color: $col-green;
+			content: "»";
+			color: $col-white;
 			padding: 0px 0px 0px 10px;
+		}
+
+		&:hover::before, &:hover:after {
+			color: $col-green;
 		}
 	}
 
@@ -121,9 +124,6 @@ body {
 
 	&__row {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
 		align-items: center;
 
 		padding: 10px 0px 0px 0px;
@@ -195,27 +195,31 @@ body {
 		flex-direction: column;
 		height: 150px;		
 		align-items: center;
+		// border: 2px solid red;
 	}
 
 	&__img {
 		width: 60px;
 		height: 60px;
+
+		// border: 2px solid red;
 	}
 
 	&__row {
 		padding: 10px;
-		display: flex;
-		align-items: center;		
+		// border: 2px solid red;
 	}
 
 	&__span {
 		font-size: 25px;
 		color: $col-green;
-		margin: 0px 5px;		
+		margin: 0px 5px;
+		// border: 2px solid red;
 	}
 
 	&__link {
 		font-size: 20px;
+		// border: 2px solid red;
 
 		&:link {
 			text-decoration: none;
@@ -236,6 +240,7 @@ body {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		// border: 2px solid red;
 	}
 
 	&__link-social {
@@ -250,5 +255,9 @@ body {
 			@extend %link-hov;
 			border-radius: $bord-rad;
 		}
+	}
+
+	&__created {
+		color: $col-green;		
 	}
 }
