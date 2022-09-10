@@ -137,6 +137,9 @@ body {
   color: #fff;
   padding: 0px 0px 0px 10px;
 }
+.header__text:hover::before, .header__text:hover:after {
+  color: #308b42;
+}
 .header__button {
   display: flex;
   flex-direction: row;
@@ -211,13 +214,12 @@ body {
   background-color: #000;
   border-radius: 40px;
   margin: 30px 0px 30px 0px;
-  padding: 10px;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
 }
 .footer__column {
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  align-items: center;
+  height: 140px;
+  margin: 10px 0px 0px 0px;
 }
 .footer__img {
   width: 60px;
@@ -225,8 +227,6 @@ body {
 }
 .footer__row {
   padding: 10px;
-  display: flex;
-  align-items: center;
 }
 .footer__span {
   font-size: 25px;
@@ -248,12 +248,13 @@ body {
 }
 .footer__social {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .footer__link-social {
-  padding: 10px 10px 0px 10px;
+  margin: 5px 0px;
+  padding: 0 10px;
+  align-self: center;
 }
 .footer__img-link {
   width: 30px;
@@ -261,6 +262,12 @@ body {
 }
 .footer__img-link:hover {
   border-radius: 40px;
+}
+.footer__created {
+  color: #308b42;
+  font-size: 10px;
+  text-align: end;
+  margin: -10px 10px 0px 0px;
 }
 
 .test {

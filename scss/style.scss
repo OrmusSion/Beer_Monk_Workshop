@@ -188,26 +188,22 @@ body {
 	background-color: $col-black;
 	border-radius: $bord-rad;
 	margin: 30px 0px 30px 0px;
-	padding: 10px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;	
 
 	&__column {
-		display: flex;
-		flex-direction: column;
-		height: 150px;		
-		align-items: center;
+		height: 140px;
+		margin: 10px 0px 10px 0px;
 		// border: 2px solid red;
 	}
 
 	&__img {
 		width: 60px;
-		height: 60px;
-
-		// border: 2px solid red;
+		height: 60px;		
 	}
 
 	&__row {
 		padding: 10px;
-		// border: 2px solid red;
 	}
 
 	&__span {
@@ -236,15 +232,16 @@ body {
 	}
 
 	&__social {
-		display: flex;
-		flex-direction: row;
+		display: flex;		
 		justify-content: center;
-		align-items: center;
+		align-items: center;		
 		// border: 2px solid red;
 	}
 
 	&__link-social {
-		padding: 10px 10px 0px 10px;
+		margin: 5px 0px;
+		padding: 0 10px;
+		align-self: center;
 	}
 
 	&__img-link {
@@ -258,6 +255,10 @@ body {
 	}
 
 	&__created {
-		color: $col-green;		
+		color: $col-green;
+		font-size: 10px;
+		text-align: end;
+		margin: -10px 15px 0px 0px;
+		// border: 2px solid red;
 	}
 }
