@@ -193,8 +193,7 @@ body {
 	&__column {
 		display: flex;
 		flex-direction: column;
-		height: 150px;
-		justify-content: center;
+		height: 150px;		
 		align-items: center;
 	}
 
@@ -205,11 +204,14 @@ body {
 
 	&__row {
 		padding: 10px;
+		display: flex;
+		align-items: center;		
 	}
 
 	&__span {
+		font-size: 25px;
 		color: $col-green;
-		margin: 0px 5px;
+		margin: 0px 5px;		
 	}
 
 	&__link {

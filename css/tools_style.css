@@ -220,7 +220,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 150px;
-  justify-content: center;
   align-items: center;
 }
 .footer__img {
@@ -229,8 +228,11 @@ body {
 }
 .footer__row {
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .footer__span {
+  font-size: 25px;
   color: #308b42;
   margin: 0px 5px;
 }
