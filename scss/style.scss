@@ -22,27 +22,25 @@ $col-white: #fff;
 	background-color: $col-white;
 }
 
-%main-space {
-	flex: 1 1 auto;
-
+%page-space {
 	background-color: $col-black;
 	border-radius: $bord-rad;
 	color: $col-white;
+	flex: 1 1 auto;
 }
 
 body {
 	font-family: Orbitron, cursive;
-	// font-family: 'SITF';
-	padding: 20px;
-	height: 100%;
+	padding: 10px;
 	color: #fff;
-
-	// border: 2px solid red;
-	// background-color: #000;
+	height: 100%;	
 }
 
 .page {
-	min-height: calc(100vh - 20px);
+	border-radius: $bord-rad;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	overflow: hidden;
 }
 
@@ -105,6 +103,12 @@ body {
 		padding: 0px 20px;
 	}
 
+	&__nav {
+		width: 100%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
 	&__nav-img {
 		height: 50px;
 		background-color: $col-green;
@@ -116,17 +120,14 @@ body {
 	}
 }
 
-.nav {
-	width: 100%;
+.ul {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
 }
 
-.home {
-	@extend %main-space;
+.homepage {
+	@extend %page-space;
 
-	&__row {
+	&__title {
 		display: flex;
 		align-items: center;
 
@@ -139,7 +140,7 @@ body {
 	}
 
 	&__text {
-		margin: 0px 20px 0px 20px;
+		margin: 0px 10px 0px 10px;
 
 		font-size: 40px;
 		font-style: italic;
@@ -155,20 +156,21 @@ body {
 
 		&::after {
 			content: url("/img/hi-hop.png");
-			// content: "";
-			// background: url("img/hi-hop.png") 100% 100%;
 			position: absolute;
 			padding: 0px 0px 0px 20px;
 		}
 	}
 
-	&__work-place {
+	&__workplace {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		padding: 20px 0px 30px 0px;
 
 		text-align: center;
 		font-size: 40px;
 
-		& p {
+		& h2 {
 			margin: 30px 0 30px 0;
 
 			&:first-letter {
@@ -178,7 +180,7 @@ body {
 		}
 	}
 
-	&__work-place-img {
+	&__workplaceimg {
 		max-width: 500px;
 		border-radius: $bord-rad;
 		box-shadow: 0px 0px 20px $col-green;
@@ -193,35 +195,30 @@ body {
 .footer {
 	background-color: $col-black;
 	border-radius: $bord-rad;
-	margin: 30px 0px 30px 0px;
+	margin: 30px 0px 10px 0px;
 	padding: 10px 0px 10px 0px;
 	text-align: center;
 
-	&__column {
-		height: 140px;
-		margin: 10px 0px 10px 0px;
-		// border: 2px solid red;
-	}
+	flex: 0 0 auto;
+
+	height: 170px;	
 
 	&__img {
 		width: 60px;
 		height: 60px;
 	}
 
-	&__row {
-		padding: 10px;
+	&__nav {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+		padding: 5px;
 	}
 
-	&__span {
-		font-size: 25px;
-		color: $col-green;
-		margin: 0px 5px;
-		// border: 2px solid red;
-	}
-
-	&__link {
+	&__nav-link {
 		font-size: 20px;
-		// border: 2px solid red;
+		padding: 0px 10px 0px 10px;
 
 		&:link {
 			text-decoration: none;
@@ -235,25 +232,27 @@ body {
 		&:hover {
 			color: $col-white;
 		}
+
+		&::before {
+			content: "«";
+			padding: 0px 7px 0px 0px;
+		}
+
+		&::after {
+			content: "»";
+			padding: 0px 0px 0px 7px;
+		}
 	}
 
-	&__social {
+	&__nav-social {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border: 2px solid red;
-	}
 
-	&__link-social {
-		margin: 5px 0px;
-		padding: 0 10px;
-		align-self: center;
-	}
-
-	&__img-link {
 		width: 30px;
 		height: 30px;
-
+		margin: 5px 10px;
+		
 		&:hover {
 			@extend %link-hov;
 			border-radius: $bord-rad;
@@ -265,6 +264,5 @@ body {
 		font-size: 10px;
 		text-align: end;
 		margin: -10px 15px 0px 0px;
-		// border: 2px solid red;
 	}
 }

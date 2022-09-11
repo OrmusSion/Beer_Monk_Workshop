@@ -4,7 +4,7 @@ $text-width: 450px;
 $text-border: 3px solid black;
 
 .contact {
-	@extend %main-space;
+	@extend %page-space;
 }
 
 .contact__area {

@@ -1,7 +1,7 @@
 @import "style.scss";
 
 .test {
-	@extend %main-space;
+	@extend %page-space;
 
 	padding: 20px;
 	line-height: 30px;

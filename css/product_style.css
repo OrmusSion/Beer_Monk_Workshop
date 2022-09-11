@@ -80,29 +80,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.footer__img-link:hover, .header__nav-img:hover {
+.footer__nav-social:hover, .header__nav-img:hover {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
   background-color: #fff;
 }
 
-.products, .home {
-  flex: 1 1 auto;
+.products, .homepage {
   background-color: #000;
   border-radius: 40px;
   color: #fff;
+  flex: 1 1 auto;
 }
 
 body {
   font-family: Orbitron, cursive;
-  padding: 20px;
-  height: 100%;
+  padding: 10px;
   color: #fff;
+  height: 100%;
 }
 
 .page {
+  border-radius: 40px;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 20px);
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -118,10 +119,7 @@ body {
   margin: 0px 0px 45px 0px;
 }
 .header__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   height: 60px;
   margin: 0px 0px 25px 0px;
   padding: 15px 0px 0px 0px;
@@ -155,29 +153,31 @@ body {
   width: 230px;
   padding: 0px 20px;
 }
+.header__nav {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
 .header__nav-img {
   height: 50px;
   background-color: #308b42;
   border-radius: 50%;
 }
-.nav {
-  width: 100%;
+.ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
-.home__row {
+.homepage__title {
   display: flex;
   align-items: center;
   padding: 10px 0px 0px 0px;
 }
-.home__img {
+.homepage__img {
   width: 300px;
   padding: 20px 20px;
 }
-.home__text {
-  margin: 0px 20px 0px 20px;
+.homepage__text {
+  margin: 0px 10px 0px 10px;
   font-size: 40px;
   font-style: italic;
   text-align: center;
@@ -185,88 +185,90 @@ body {
   word-spacing: 20px;
   line-height: 50px;
 }
-.home__text:first-letter {
+.homepage__text:first-letter {
   font-size: 60px;
   color: #308b42;
 }
-.home__text::after {
+.homepage__text::after {
   content: url("/img/hi-hop.png");
   position: absolute;
   padding: 0px 0px 0px 20px;
 }
-.home__work-place {
+.homepage__workplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px 0px 30px 0px;
   text-align: center;
   font-size: 40px;
 }
-.home__work-place p {
+.homepage__workplace h2 {
   margin: 30px 0 30px 0;
 }
-.home__work-place p:first-letter {
+.homepage__workplace h2:first-letter {
   font-size: 60px;
   color: #308b42;
 }
-.home__work-place-img {
+.homepage__workplaceimg {
   max-width: 500px;
   border-radius: 40px;
   box-shadow: 0px 0px 20px #308b42;
   transition: 1.5s;
 }
-.home__work-place-img:hover {
+.homepage__workplaceimg:hover {
   transform: scale(2);
 }
 
 .footer {
   background-color: #000;
   border-radius: 40px;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 10px 0px;
   padding: 10px 0px 10px 0px;
   text-align: center;
-}
-.footer__column {
-  height: 140px;
-  margin: 10px 0px 10px 0px;
+  flex: 0 0 auto;
+  height: 170px;
 }
 .footer__img {
   width: 60px;
   height: 60px;
 }
-.footer__row {
-  padding: 10px;
+.footer__nav {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
-.footer__span {
-  font-size: 25px;
-  color: #308b42;
-  margin: 0px 5px;
-}
-.footer__link {
+.footer__nav-link {
   font-size: 20px;
+  padding: 0px 10px 0px 10px;
 }
-.footer__link:link {
+.footer__nav-link:link {
   text-decoration: none;
   color: #308b42;
 }
-.footer__link:visited {
+.footer__nav-link:visited {
   color: #308b42;
 }
-.footer__link:hover {
+.footer__nav-link:hover {
   color: #fff;
 }
-.footer__social {
+.footer__nav-link::before {
+  content: "«";
+  padding: 0px 7px 0px 0px;
+}
+.footer__nav-link::after {
+  content: "»";
+  padding: 0px 0px 0px 7px;
+}
+.footer__nav-social {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer__link-social {
-  margin: 5px 0px;
-  padding: 0 10px;
-  align-self: center;
-}
-.footer__img-link {
   width: 30px;
   height: 30px;
+  margin: 5px 10px;
 }
-.footer__img-link:hover {
+.footer__nav-social:hover {
   border-radius: 40px;
 }
 .footer__created {
