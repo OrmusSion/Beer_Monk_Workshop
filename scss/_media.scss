@@ -1,2 +1,137 @@
-@import "style.scss";
+.container {
+	@media (max-width: 1300px) {
+		padding: 0px 15px;
+	}
 
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+
+	@media (max-width: 767px) {
+		max-width: none;
+		margin: 0px 20px;
+	}
+}
+
+.header {
+	@media (max-width: 992px) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	&__img {
+		@media (max-width: 992px) {
+			display: none;
+		}
+	}
+}
+
+.header__title {
+	@media (max-width: 1300px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 992px) {
+		font-size: 30px;
+	}
+}
+
+.homepage {
+
+	&__title {
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__img {
+		@media (max-width: 1300px) {
+			width: 250px;
+		}
+
+		@media (max-width: 992px) {
+			width: 200px;
+		}
+	}
+
+	&__text {
+		@media (max-width: 1300px) {
+			font-size: 30px;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 20px;
+		}
+
+		&:first-letter {
+			@media (max-width: 1300px) {
+				font-size: 50px;
+			}
+
+			@media (max-width: 992px) {
+				font-size: 40px;
+			}
+		}
+
+		&-img {
+			@media (max-width: 1300px) {
+				width: 40px;
+				margin: 5px 0px 0px -15px;
+			}
+
+			@media (max-width: 992px) {
+				width: 30px;
+				margin: 10px 0px 0px -15px;
+			}
+		}
+	}
+
+	&__workplace {
+		@media (max-width: 1300px) {
+			font-size: 30px;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 20px;
+		}
+
+		& h2:first-letter {
+			@media (max-width: 1300px) {
+				font-size: 50px;
+			}
+	
+			@media (max-width: 992px) {
+				font-size: 40px;
+			}
+		}
+	}
+
+	&__workplaceimg {
+		@media (max-width: 992px) {
+			max-width: 350px;
+		}
+
+		@media (max-width: 767px) {
+			max-width: 250px;
+			transform: none;
+		}
+
+		&:hover {
+			@media (max-width: 767px) {
+				transform: none;
+			}
+		}
+	}
+}
+
+.footer {
+	@media (max-width:767px) {
+		margin: 15px 0px 10px 0px;
+		height: 220px;
+	}
+
+	&__nav {
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+}
