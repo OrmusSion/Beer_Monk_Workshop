@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.footer__nav-social:hover, .header__nav-img:hover {
+.footer__nav-social-link:hover, .header__nav-img:hover {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
   background-color: #fff;
 }
@@ -260,9 +260,9 @@ body {
 }
 .footer__nav-social {
   justify-content: center;
-  align-items: center;
+  padding: 10px 0px 0px 0px;
 }
-.footer__nav-social:hover {
+.footer__nav-social-link:hover {
   border-radius: 40px;
 }
 .footer__nav-social-link {
@@ -285,12 +285,13 @@ body {
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
+    padding: 0px 15px;
   }
 }
 @media (max-width: 767px) {
   .container {
     max-width: none;
-    margin: 0px 20px;
+    padding: 0px 15px;
   }
 }
 
