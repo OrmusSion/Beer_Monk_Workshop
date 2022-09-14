@@ -260,7 +260,7 @@ body {
 }
 .footer__nav-social {
   justify-content: center;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 5px 0px;
 }
 .footer__nav-social-link:hover {
   border-radius: 40px;
@@ -284,7 +284,6 @@ body {
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
     padding: 0px 15px;
   }
 }
@@ -401,10 +400,14 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .footer {
+    margin: 15px 0px 0px 0px;
+  }
+}
 @media (max-width: 767px) {
   .footer {
-    margin: 15px 0px 10px 0px;
-    height: 220px;
+    height: 230px;
   }
 }
 @media (max-width: 767px) {
