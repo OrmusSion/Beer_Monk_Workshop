@@ -1,5 +1,9 @@
 @import "style.scss";
 
+.header__nav-first .header__nav-img {
+	@extend %link-hov-active;
+}
+
 .homepage {
 	@extend %page-space;
 

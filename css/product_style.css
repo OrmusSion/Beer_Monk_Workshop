@@ -85,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 
+.header__nav-second .header__nav-img {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+  background-color: #024d39;
+}
+
 .products {
   background-color: #000;
   border-radius: 40px;

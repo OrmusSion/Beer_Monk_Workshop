@@ -22,6 +22,11 @@ $col-white: #fff;
 	background-color: $col-white;
 }
 
+%link-hov-active {
+	box-shadow: $box-shad;
+	background-color: $col-darkgreen;
+}
+
 %page-space {
 	background-color: $col-black;
 	border-radius: $bord-rad;
