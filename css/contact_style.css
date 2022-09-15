@@ -371,10 +371,8 @@ body {
   }
 }
 
-.contact__area {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 0px 30px 0px;
+.footer__nav-four .footer__nav-link {
+  color: #024d39;
 }
 
 .contact__title {
@@ -382,46 +380,51 @@ body {
   text-align: center;
   font-size: 20px;
 }
+.contact__body {
+  display: flex;
+  justify-content: center;
+}
 
-.contact__column {
-  width: 600px;
-  margin: 0px auto;
-  padding: 0px 0px 15px 0px;
-  text-align: center;
+.contact__form {
+  margin: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 40px;
   background-color: #024d39;
 }
-.contact__column p {
-  margin: 20px 0px 20px 0px;
-  font-size: 35px;
+.contact__form h1 {
+  padding: 15px 0px 0px 0px;
+  font-size: 30px;
 }
-
-.contact__area-name {
-  width: 450px;
+.contact__form-name {
+  width: 100%;
+  margin: 15px 0px 0px 0px;
   padding: 3px 3px 3px 10px;
   font-size: 15px;
   text-align: center;
   border: 3px solid black;
   border-radius: 40px;
 }
-.contact__area-name:focus {
+.contact__form-name:focus {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
-
-.contact__area-email {
-  width: 450px;
+.contact__form-email {
+  width: 100%;
+  margin: 15px 0px 0px 0px;
   padding: 3px 3px 3px 10px;
   font-size: 15px;
   text-align: center;
   border: 3px solid black;
   border-radius: 40px;
 }
-.contact__area-email:focus {
+.contact__form-email:focus {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
-
-.contact__area-text {
-  width: 450px;
+.contact__form-text {
+  width: 75%;
+  margin: 15px 0px 0px 0px;
   height: 200px;
   padding: 5px 5px 5px 10px;
   resize: none;
@@ -430,11 +433,10 @@ body {
   border: 3px solid black;
   border-radius: 40px;
 }
-.contact__area-text:focus {
+.contact__form-text:focus {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
-
-.contact__submit {
+.contact__form-submit {
   margin: 10px 30px;
   padding: 5px 30px;
   border-radius: 40px;
@@ -442,13 +444,12 @@ body {
   font-weight: 800;
   background-color: #308b42;
 }
-.contact__submit:hover {
+.contact__form-submit:hover {
   background-color: #fff;
   color: #000;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
-
-.contact__reset {
+.contact__form-reset {
   margin: 10px 30px;
   padding: 5px 30px;
   border-radius: 50px;
@@ -456,7 +457,7 @@ body {
   font-weight: 800;
   background-color: #308b42;
 }
-.contact__reset:hover {
+.contact__form-reset:hover {
   background-color: #fff;
   color: #000;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);

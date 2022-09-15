@@ -55,17 +55,35 @@
 			</div>
 		</header>
 
-		<div class="contact">
+		<main class="contact">
 			<div class="container">
-				<div class="contact__area">
-					<div class="contact__title">
-						<p>написать что-то про себя
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque assumenda recusandae at nam
-							debitis quasi dignissimos perferendis dolore soluta commodi deserunt unde ipsum, est
-							accusantium nisi. Saepe aperiam expedita sit!
-						</p>
-					</div>
-					<!-- <div class="contact__column">
+				<section class="contact__title">
+					<h2>написать что-то про себя
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque assumenda recusandae at nam
+						debitis quasi dignissimos perferendis dolore soluta commodi deserunt unde ipsum, est
+						accusantium nisi. Saepe aperiam expedita sit!</h2>
+				</section>
+				<section class="contact__body">
+					<form action="#" method="get" enctype="multipart/form-data" class="contact__form">
+						<h1>To contact me fill the forms</h1>
+						<div>
+							<input type="text" name="username" placeholder="Enter your name" tabindex="1" required
+								class="contact__form-name">
+						</div>
+						<div>
+							<input type="email" name="usermail" placeholder="Enter your email" tabindex="2" required
+								class="contact__form-email">
+						</div>
+						<textarea name="text" placeholder="Enter your message" tabindex="3" class="contact__form-text"
+							required cols="50" rows="13"></textarea>
+						<div class="contact__form-buttons">
+							<button type="submit" tabindex="4" class="contact__form-submit">Enter</button>
+							<button type="reset" tabindex="5" class="contact__form-reset">Clear</button>
+						</div>
+					</form>
+				</section>
+
+				<!-- <div class="contact__column">
 						<div>
 							<p>To contact me fill the forms</p>
 						</div>
@@ -88,9 +106,9 @@
 							<button type="reset" tabindex="5" class="contact__reset">Clear</button>
 						</form>
 					</div> -->
-				</div>
+				</section>
 			</div>
-		</div>
+		</main>
 
 		<footer class="footer">
 			<div class='container'>
@@ -99,35 +117,37 @@
 
 					<nav class="footer__nav">
 						<ul class="footer__nav ul">
-							<li>
+							<li class="footer__nav-first">
 								<a href="index.html" class="footer__nav-link">Home</a>
 							</li>
-							<li>
+							<li class="footer__nav-second">
 								<a href="products.html" class="footer__nav-link">Products</a>
 							</li>
-							<li>
+							<li class="footer__nav-third">
 								<a href="tools.html" class="footer__nav-link">Tools</a>
 							</li>
-							<li>
+							<li class="footer__nav-four">
 								<a href="contact.html" class="footer__nav-link">Contacts</a>
 							</li>
 						</ul>
 						<ul class="footer__nav-social ul">
 							<li>
 								<a href="https://www.facebook.com/ormus.sion/" target="_blank"><img
-										src="img/svg/facebook-green.svg" alt="Facebook" class="footer__nav-social-link"></a>
+										src="img/svg/facebook-green.svg" alt="Facebook"
+										class="footer__nav-social-link"></a>
 							</li>
 							<li>
 								<a href="https://www.instagram.com/ormussion/" target="_blank"><img
-										src="img/svg/instagram-green.svg" alt="Instagram" class="footer__nav-social-link"></a>
+										src="img/svg/instagram-green.svg" alt="Instagram"
+										class="footer__nav-social-link"></a>
 							</li>
 							<li>
-								<a href="tg://resolve?domain=OrmusSion"><img
-										src="img/svg/telegram.svg" alt="Telegram" class="footer__nav-social-link"></a>
+								<a href="tg://resolve?domain=OrmusSion"><img src="img/svg/telegram.svg" alt="Telegram"
+										class="footer__nav-social-link"></a>
 							</li>
 							<li>
-								<a href="viber://chat?number=%2B380976795056"><img
-										src="img/svg/viber.svg" alt="viber" class="footer__nav-social-link"></a>
+								<a href="viber://chat?number=%2B380976795056"><img src="img/svg/viber.svg" alt="viber"
+										class="footer__nav-social-link"></a>
 							</li>
 						</ul>
 					</nav>

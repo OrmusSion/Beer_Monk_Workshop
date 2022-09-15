@@ -3,7 +3,7 @@
 		padding: 0px 15px;
 	}
 
-	@media (max-width: 992px) {		
+	@media (max-width: 992px) {
 		padding: 0px 15px;
 	}
 
@@ -97,7 +97,7 @@
 			@media (max-width: 1300px) {
 				font-size: 50px;
 			}
-	
+
 			@media (max-width: 992px) {
 				font-size: 40px;
 			}
@@ -122,12 +122,24 @@
 	}
 }
 
+// .contact {
+// 	@media (max-width: 992px) {
+// 		font-size: 10;		
+// 	}
+
+// 	&__form h1 {
+// 		@media (max-width: 992px) {
+// 			font-size: 20;
+// 		}
+// 	}
+// }
+
 .footer {
 	@media (max-width: 992px) {
 		margin: 15px 0px 0px 0px;
 	}
-	
-	@media (max-width:767px) {		
+
+	@media (max-width:767px) {
 		height: 230px;
 	}
 

@@ -370,3 +370,7 @@ body {
     flex-direction: column;
   }
 }
+
+.footer__nav-second .footer__nav-link {
+  color: #024d39;
+}

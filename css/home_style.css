@@ -371,6 +371,10 @@ body {
   }
 }
 
+.footer__nav-first .footer__nav-link {
+  color: #024d39;
+}
+
 .homepage__title {
   display: flex;
   align-items: center;

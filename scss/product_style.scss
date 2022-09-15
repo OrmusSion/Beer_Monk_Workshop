@@ -4,6 +4,10 @@
 	@extend %link-hov-active;
 }
 
+.footer__nav-second .footer__nav-link {
+	color: $col-darkgreen;
+}
+
 .products {
 	@extend %page-space;	
 }
