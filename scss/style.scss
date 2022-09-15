@@ -122,6 +122,10 @@ body {
 		&:hover {
 			@extend %link-hov;
 		}
+
+		&:active {
+			border-radius: 50%;
+		}
 	}
 }
 

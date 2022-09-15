@@ -39,11 +39,12 @@ $text-border: 3px solid black;
 
 	& h1 {
 		padding: 15px 0px 0px 0px;
-		font-size: 30px;
+		font-size: 40px;
+		text-align: center;
 	}
 
 	&-name {
-		width: 100%;
+		width: 75%;
 		margin: 15px 0px 0px 0px;
 		padding: 3px 3px 3px 10px;
 
@@ -59,7 +60,7 @@ $text-border: 3px solid black;
 	}
 
 	&-email {
-		width: 100%;
+		width: 75%;
 		margin: 15px 0px 0px 0px;
 		padding: 3px 3px 3px 10px;
 
@@ -93,8 +94,8 @@ $text-border: 3px solid black;
 		}
 	}
 
-	&-submit {
-		margin: 10px 30px;
+	&-submit, &-reset {
+		margin: 15px 20px 20px 20px;
 		padding: 5px 30px;
 
 		border-radius: $bord-rad;
@@ -110,22 +111,6 @@ $text-border: 3px solid black;
 			box-shadow: $box-shad;
 		}
 	}
-
-	&-reset {
-		margin: 10px 30px;
-		padding: 5px 30px;
-
-		border-radius: 50px;
-
-		font-size: 17px;
-		font-weight: 800;
-
-		background-color: $col-green;
-
-		&:hover {
-			background-color: $col-white;
-			color: $col-black;
-			box-shadow: $box-shad;
-		}
-	}
 }
+
+@import "_media";
