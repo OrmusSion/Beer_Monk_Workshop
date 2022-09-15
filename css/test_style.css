@@ -570,3 +570,10 @@ body {
   color: darkblue;
   border: 2px solid black;
 }
+
+.test__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}

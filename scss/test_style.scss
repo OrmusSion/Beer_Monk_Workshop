@@ -148,27 +148,27 @@
 	line-height: 50px;
 
 	// display:inline;
-	
+
 	// display: flex;
 	// flex-direction: column;
 	// flex-wrap: wrap;
 
 
 	&__te1 {
-		display:inline-flex;
-		
+		display: inline-flex;
+
 		color: red;
 		border: 2px solid black;
 	}
 
 	&__te2 {
-		color:aqua;
+		color: aqua;
 		border: 2px solid black;
 	}
 
 	&__te3 {
-		color:gold;
-		border: 2px solid black;		
+		color: gold;
+		border: 2px solid black;
 	}
 
 	&__te4 {
@@ -179,3 +179,9 @@
 
 }
 
+.test__input {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items:flex-end;
+}
