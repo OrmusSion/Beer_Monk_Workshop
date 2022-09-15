@@ -168,6 +168,10 @@ body {
   background-color: #308b42;
   border-radius: 50%;
 }
+.header__nav-img:active {
+  border-radius: 50%;
+}
+
 .ul {
   display: flex;
 }
@@ -289,11 +293,17 @@ body {
 @media (max-width: 1300px) {
   .homepage__text {
     font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 15px;
+    line-height: 50px;
   }
 }
 @media (max-width: 992px) {
   .homepage__text {
     font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 40px;
   }
 }
 @media (max-width: 1300px) {
@@ -309,13 +319,11 @@ body {
 @media (max-width: 1300px) {
   .homepage__text-img {
     width: 40px;
-    margin: 5px 0px 0px -15px;
   }
 }
 @media (max-width: 992px) {
   .homepage__text-img {
     width: 30px;
-    margin: 10px 0px 0px -15px;
   }
 }
 @media (max-width: 1300px) {
@@ -459,11 +467,17 @@ body {
 @media (max-width: 1300px) {
   .homepage__text {
     font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 15px;
+    line-height: 50px;
   }
 }
 @media (max-width: 992px) {
   .homepage__text {
     font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 40px;
   }
 }
 @media (max-width: 1300px) {
@@ -479,13 +493,11 @@ body {
 @media (max-width: 1300px) {
   .homepage__text-img {
     width: 40px;
-    margin: 5px 0px 0px -15px;
   }
 }
 @media (max-width: 992px) {
   .homepage__text-img {
     width: 30px;
-    margin: 10px 0px 0px -15px;
   }
 }
 @media (max-width: 1300px) {

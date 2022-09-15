@@ -55,10 +55,18 @@
 	&__text {
 		@media (max-width: 1300px) {
 			font-size: 30px;
+
+			letter-spacing: 3px;
+			word-spacing: 15px;
+			line-height: 50px;
 		}
 
 		@media (max-width: 992px) {
 			font-size: 20px;
+
+			letter-spacing: 2px;
+			word-spacing: 10px;
+			line-height: 40px;
 		}
 
 		&:first-letter {
@@ -74,12 +82,10 @@
 		&-img {
 			@media (max-width: 1300px) {
 				width: 40px;
-				margin: 5px 0px 0px -15px;
 			}
 
 			@media (max-width: 992px) {
 				width: 30px;
-				margin: 10px 0px 0px -15px;
 			}
 		}
 	}
@@ -147,7 +153,8 @@
 		}
 	}
 
-	&__form-submit, &__form-reset {
+	&__form-submit,
+	&__form-reset {
 		@media (max-width: 767px) {
 			font-size: 10px;
 			padding: 5px 20px;
