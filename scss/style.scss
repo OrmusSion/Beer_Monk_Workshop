@@ -10,7 +10,6 @@
 
 @import "_nullstyle";
 
-
 $bord-rad: 40px;
 $box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
 $col-black: #000;
@@ -123,72 +122,6 @@ body {
 
 .ul {
 	display: flex;
-}
-
-.homepage {
-	@extend %page-space;
-
-	&__title {
-		display: flex;
-		align-items: center;
-
-		padding: 10px 0px 0px 0px;
-	}
-
-	&__img {
-		width: 300px;
-		padding: 20px 20px;
-	}
-
-	&__text {
-		margin: 0px 10px 0px 10px;
-
-		font-size: 40px;
-		font-style: italic;
-		text-align: center;
-		letter-spacing: 4px;
-		word-spacing: 20px;
-		line-height: 60px;
-
-		&:first-letter {
-			font-size: 60px;
-			color: $col-green;
-		}
-
-		&-img {
-			margin: 5px 0px 0px -15px;
-		}
-	}
-
-	&__workplace {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px 0px 30px 0px;
-
-		text-align: center;
-		font-size: 40px;
-
-		& h2 {
-			margin: 30px 0 30px 0;
-
-			&:first-letter {
-				font-size: 60px;
-				color: $col-green;
-			}
-		}
-	}
-
-	&__workplaceimg {
-		max-width: 500px;
-		border-radius: $bord-rad;
-		box-shadow: 0px 0px 20px $col-green;
-		transition: 1.5s;
-
-		&:hover {
-			transform: scale(2);
-		}
-	}
 }
 
 .footer {

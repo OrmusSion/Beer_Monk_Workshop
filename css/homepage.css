@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 
-.tools {
+.homepage {
   background-color: #000;
   border-radius: 40px;
   color: #fff;
@@ -364,4 +364,54 @@ body {
   .footer__nav {
     flex-direction: column;
   }
+}
+
+.homepage__title {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+.homepage__img {
+  width: 300px;
+  padding: 20px 20px;
+}
+.homepage__text {
+  margin: 0px 10px 0px 10px;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  line-height: 60px;
+}
+.homepage__text:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.homepage__text-img {
+  margin: 5px 0px 0px -15px;
+}
+.homepage__workplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+.homepage__workplace h2 {
+  margin: 30px 0 30px 0;
+}
+.homepage__workplace h2:first-letter {
+  font-size: 60px;
+  color: #308b42;
+}
+.homepage__workplaceimg {
+  max-width: 500px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px #308b42;
+  transition: 1.5s;
+}
+.homepage__workplaceimg:hover {
+  transform: scale(2);
 }
