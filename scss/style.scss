@@ -19,7 +19,7 @@ $col-white: #fff;
 
 %link-hov {
 	box-shadow: $box-shad;
-	background-color: $col-white;	
+	background-color: $col-white;
 }
 
 %link-hov-active {
@@ -69,22 +69,22 @@ body {
 
 		font-size: 50px;
 
-		&::before {
-			content: "«";
-			color: $col-white;
-			padding: 0px 10px 0px 0px;
-		}
+		// &::before {
+		// 	content: "«";
+		// 	color: $col-white;
+		// 	padding: 0px 10px 0px 0px;
+		// }
 
-		&::after {
-			content: "»";
-			color: $col-white;
-			padding: 0px 0px 0px 10px;
-		}
+		// &::after {
+		// 	content: "»";
+		// 	color: $col-white;
+		// 	padding: 0px 0px 0px 10px;
+		// }
 
-		&:hover::before,
-		&:hover:after {
-			color: $col-green;
-		}
+		// &:hover::before,
+		// &:hover:after {
+		// 	color: $col-green;
+		// }
 	}
 
 	&__buttons {
@@ -104,7 +104,7 @@ body {
 	}
 
 	&__img {
-		width: 230px;
+		width: 18%;
 		padding: 0px 20px;
 	}
 
@@ -194,7 +194,7 @@ body {
 		padding: 10px 0px 5px 0px;
 	}
 
-	&__nav-social-link {		
+	&__nav-social-link {
 		transition-duration: 1s;
 
 		&:hover {
