@@ -19,7 +19,7 @@ $col-white: #fff;
 
 %link-hov {
 	box-shadow: $box-shad;
-	background-color: $col-white;
+	background-color: $col-white;	
 }
 
 %link-hov-active {
@@ -118,6 +118,7 @@ body {
 		height: 50px;
 		background-color: $col-green;
 		border-radius: 50%;
+		transition-duration: 1s;
 
 		&:hover {
 			@extend %link-hov;
@@ -161,6 +162,8 @@ body {
 		font-size: 20px;
 		padding: 0px 10px 0px 10px;
 
+		transition-duration: 0.5s;
+
 		&:link {
 			text-decoration: none;
 			color: $col-green;
@@ -191,7 +194,9 @@ body {
 		padding: 10px 0px 5px 0px;
 	}
 
-	&__nav-social-link {
+	&__nav-social-link {		
+		transition-duration: 1s;
+
 		&:hover {
 			@extend %link-hov;
 			border-radius: $bord-rad;

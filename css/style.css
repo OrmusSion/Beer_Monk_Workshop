@@ -155,6 +155,7 @@ body {
   height: 50px;
   background-color: #308b42;
   border-radius: 50%;
+  transition-duration: 1s;
 }
 .header__nav-img:active {
   border-radius: 50%;
@@ -186,6 +187,7 @@ body {
 .footer__nav-link {
   font-size: 20px;
   padding: 0px 10px 0px 10px;
+  transition-duration: 0.5s;
 }
 .footer__nav-link:link {
   text-decoration: none;
@@ -208,6 +210,9 @@ body {
 .footer__nav-social {
   justify-content: center;
   padding: 10px 0px 5px 0px;
+}
+.footer__nav-social-link {
+  transition-duration: 1s;
 }
 .footer__nav-social-link:hover {
   border-radius: 40px;
