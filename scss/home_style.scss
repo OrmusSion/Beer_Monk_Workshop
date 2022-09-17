@@ -1,23 +1,23 @@
 @import "style.scss";
 
-.header__nav-first .header__nav-link {
-	color: $col-black;	
-}
-
-.header__nav-first .header__nav-link:hover {
-	color: #7a7a7a;
-}
-
-.footer__nav-first .footer__nav-link {
+.header__nav-first-link .link {
 	color: $col-black;
 }
 
-.footer__nav-first .footer__nav-link:hover {
+.header__nav-first-link .link:hover {
+	color: #7a7a7a;
+}
+
+.footer__nav-first-link .link {
+	color: $col-black;
+}
+
+.footer__nav-first-link .link:hover {
 	color: #7a7a7a;
 }
 
 .homepage {
-	@extend %page-space;	
+	@extend %main-space;
 
 	&__title {
 		display: flex;
@@ -71,7 +71,7 @@
 	}
 
 	&__workplaceimg {
-		max-width: 500px;		
+		max-width: 500px;
 		border-radius: $bord-rad;
 		box-shadow: 0px 0px 20px $col-green;
 		transition: 1.5s;

@@ -80,17 +80,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.footer__nav-social-link:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-  background-color: #fff;
-}
-
 .contact {
   background-color: #000;
   box-shadow: 0 0 40px black;
   border-radius: 40px;
   color: #fff;
   flex: 1 1 auto;
+}
+
+.footer, .header {
+  background-color: #000;
+  box-shadow: 0 0 40px black;
+  border-radius: 40px;
 }
 
 body {
@@ -113,9 +114,6 @@ body {
 }
 
 .header {
-  background-color: #000;
-  box-shadow: 0 0 40px black;
-  border-radius: 40px;
   height: 180px;
   margin: 0px 0px 45px 0px;
 }
@@ -126,7 +124,7 @@ body {
   padding: 15px 0px 0px 0px;
   font-size: 50px;
 }
-.header__buttons {
+.header__panel {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -144,86 +142,61 @@ body {
 .header__nav {
   width: 100%;
   justify-content: space-around;
-  align-items: center;
 }
 .header__nav-link {
   font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #fff;
-  transition-duration: 1s;
-}
-.header__nav-link:hover {
-  color: #000000;
 }
 
 .ul {
   display: flex;
 }
 
+.link {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  transition-duration: 1s;
+}
+.link:hover {
+  color: #000;
+}
+
 .footer {
-  background-color: #000;
-  box-shadow: 0 0 40px black;
-  border-radius: 40px;
+  flex: 0 0 auto;
+  height: 150px;
   margin: 30px 0px 10px 0px;
   padding: 10px 0px 10px 0px;
   text-align: center;
-  flex: 0 0 auto;
-  height: 170px;
 }
 .footer__img {
   width: 60px;
   height: 60px;
+  margin: 0px 0px 10px 0px;
+}
+.footer__panel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
 }
 .footer__nav {
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 5px;
+  height: 50px;
+  width: 100%;
+  background-color: #024d39;
+  border-radius: 40px;
 }
 .footer__nav-link {
   font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 0px 10px 0px 10px;
-  transition-duration: 0.5s;
-}
-.footer__nav-link:link {
-  text-decoration: none;
-  color: #308b42;
-}
-.footer__nav-link:visited {
-  color: #308b42;
-}
-.footer__nav-link:hover {
-  color: #fff;
-}
-.footer__nav-link::before {
-  content: "«";
-  padding: 0px 7px 0px 0px;
-}
-.footer__nav-link::after {
-  content: "»";
-  padding: 0px 0px 0px 7px;
-}
-.footer__nav-social {
-  justify-content: center;
-  padding: 10px 0px 5px 0px;
-}
-.footer__nav-social-link {
-  border-radius: 50%;
-  transition-duration: 1s;
-}
-.footer__nav-social-link {
-  width: 30px;
-  height: 30px;
-  margin: 5px 10px;
 }
 .footer__created {
   color: #308b42;
   font-size: 10px;
   text-align: end;
-  margin: -10px 15px 0px 0px;
+  margin: 5px 20px 0px 0px;
 }
 
 @media (max-width: 1300px) {
@@ -415,27 +388,47 @@ body {
     margin: 15px 0px 0px 0px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .footer {
-    height: 230px;
+    height: 200px;
   }
 }
 @media (max-width: 767px) {
+  .footer {
+    height: 180px;
+  }
+}
+@media (max-width: 992px) {
   .footer__nav {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1250px) {
+  .footer__nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1060px) {
+  .footer__nav-link {
+    font-size: 10px;
   }
 }
 
-.header__nav-four .header__nav-link {
+.header__nav-four-link .link {
   color: #000;
 }
 
-.header__nav-four .header__nav-link:hover {
+.header__nav-four-link .link:hover {
   color: #7a7a7a;
 }
 
-.footer__nav-four .footer__nav-link {
-  color: #fff;
+.footer__nav-four-link .link {
+  color: #000;
+}
+
+.footer__nav-four-link .link:hover {
+  color: #7a7a7a;
 }
 
 .contact__title {
@@ -703,13 +696,29 @@ body {
     margin: 15px 0px 0px 0px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .footer {
-    height: 230px;
+    height: 200px;
   }
 }
 @media (max-width: 767px) {
+  .footer {
+    height: 180px;
+  }
+}
+@media (max-width: 992px) {
   .footer__nav {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1250px) {
+  .footer__nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1060px) {
+  .footer__nav-link {
+    font-size: 10px;
   }
 }
