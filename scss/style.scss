@@ -12,23 +12,21 @@
 
 $bord-rad: 40px;
 $box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
+$box-shad-but: 0 0 20px rgba(255, 255, 255, 0.7);
+$box-shad-page: 0 0 40px black;
 $col-black: #000;
 $col-green: #308b42;
 $col-darkgreen: #024d39;
 $col-white: #fff;
 
 %link-hov {
-	box-shadow: $box-shad;
+	box-shadow: $box-shad-but;
 	background-color: $col-white;
-}
-
-%link-hov-active {
-	box-shadow: $box-shad;
-	background-color: $col-darkgreen;
 }
 
 %page-space {
 	background-color: $col-black;
+	box-shadow: $box-shad-page;
 	border-radius: $bord-rad;
 	color: $col-white;
 	flex: 1 1 auto;
@@ -36,13 +34,13 @@ $col-white: #fff;
 
 body {
 	font-family: Orbitron, cursive;
-	padding: 10px;
+	// padding: 10px;
 	color: #fff;
 	height: 100%;
 }
 
 .page {
-	border-radius: $bord-rad;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -50,12 +48,13 @@ body {
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1500px;
 	margin: 0px auto;
 }
 
 .header {
 	background-color: $col-black;
+	box-shadow: $box-shad-page;
 	border-radius: $bord-rad;
 	height: 180px;
 	margin: 0px 0px 45px 0px;
@@ -68,23 +67,6 @@ body {
 		padding: 15px 0px 0px 0px;
 
 		font-size: 50px;
-
-		// &::before {
-		// 	content: "«";
-		// 	color: $col-white;
-		// 	padding: 0px 10px 0px 0px;
-		// }
-
-		// &::after {
-		// 	content: "»";
-		// 	color: $col-white;
-		// 	padding: 0px 0px 0px 10px;
-		// }
-
-		// &:hover::before,
-		// &:hover:after {
-		// 	color: $col-green;
-		// }
 	}
 
 	&__buttons {
@@ -104,7 +86,7 @@ body {
 	}
 
 	&__img {
-		width: 18%;
+		width: 15%;
 		padding: 0px 20px;
 	}
 
@@ -112,20 +94,18 @@ body {
 		width: 100%;
 		justify-content: space-around;
 		align-items: center;
-	}
 
-	&__nav-img {
-		height: 50px;
-		background-color: $col-green;
-		border-radius: 50%;
-		transition-duration: 1s;
+		&-link {
+			font-size: 25px;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			color: $col-white;
 
-		&:hover {
-			@extend %link-hov;
-		}
+			transition-duration: 1s;
 
-		&:active {
-			border-radius: 50%;
+			&:hover {
+				color: #000;
+			}
 		}
 	}
 }
@@ -136,55 +116,47 @@ body {
 
 .footer {
 	background-color: $col-black;
+	box-shadow: $box-shad-page;
 	border-radius: $bord-rad;
 	margin: 30px 0px 10px 0px;
 	padding: 10px 0px 10px 0px;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;	
 
 	flex: 0 0 auto;
 
-	height: 170px;
+	height: 140px;
 
 	&__img {
 		width: 60px;
 		height: 60px;
+
+		margin: 0px 0px 10px 0px;
 	}
 
-	&__nav {
+	&__nav {		
+		border: 2px solid red;
+
 		width: 100%;
-		justify-content: center;
-		align-items: center;
+
+		background-color: $col-darkgreen;
+		border-radius: $bord-rad;
 
 		padding: 5px;
 	}
 
 	&__nav-link {
 		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: $col-white;
 		padding: 0px 10px 0px 10px;
 
 		transition-duration: 0.5s;
 
-		&:link {
-			text-decoration: none;
-			color: $col-green;
-		}
-
-		&:visited {
-			color: $col-green;
-		}
-
 		&:hover {
-			color: $col-white;
-		}
-
-		&::before {
-			content: "«";
-			padding: 0px 7px 0px 0px;
-		}
-
-		&::after {
-			content: "»";
-			padding: 0px 0px 0px 7px;
+			color: $col-black;
 		}
 	}
 
@@ -195,11 +167,11 @@ body {
 	}
 
 	&__nav-social-link {
+		border-radius: 50%;
 		transition-duration: 1s;
 
 		&:hover {
 			@extend %link-hov;
-			border-radius: $bord-rad;
 		}
 	}
 
@@ -213,7 +185,7 @@ body {
 		color: $col-green;
 		font-size: 10px;
 		text-align: end;
-		margin: -10px 15px 0px 0px;
+		margin: 5px 20px 0px 0px;
 	}
 }
 

@@ -1,11 +1,15 @@
 @import "style.scss";
 
-.header__nav-second .header__nav-img {
-	@extend %link-hov-active;
+.header__nav-second .header__nav-link {
+	color: $col-black;	
+}
+
+.header__nav-second .header__nav-link:hover {
+	color: #7a7a7a;	
 }
 
 .footer__nav-second .footer__nav-link {
-	color: $col-darkgreen;
+	color: $col-white;
 }
 
 .products {
