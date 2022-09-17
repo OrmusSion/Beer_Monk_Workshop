@@ -26,7 +26,7 @@
 		height: 140px;
 	}
 
-	&__buttons {
+	&__panel {
 		@media (max-width: 992px) {
 			height: 60px;
 		}
@@ -196,17 +196,18 @@
 	}
 
 	@media (max-width:992px) {
-		height: 200px;
+		height: 190px;
 	}
 
 	@media (max-width:767px) {
-		height: 180px;
-	}
+		height: 170px;
+	}	
 
 	&__nav {
 		@media (max-width: 992px) {
 			flex-direction: column;
 			align-items: center;
+			height: 70px;
 		}
 
 		&-link {

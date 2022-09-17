@@ -224,17 +224,17 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .header__buttons {
+  .header__panel {
     height: 60px;
   }
 }
 @media (max-width: 767px) {
-  .header__buttons {
+  .header__panel {
     height: 50px;
   }
 }
 @media (max-width: 500px) {
-  .header__buttons {
+  .header__panel {
     height: 40px;
   }
 }
@@ -382,18 +382,19 @@ body {
 }
 @media (max-width: 992px) {
   .footer {
-    height: 200px;
+    height: 190px;
   }
 }
 @media (max-width: 767px) {
   .footer {
-    height: 180px;
+    height: 170px;
   }
 }
 @media (max-width: 992px) {
   .footer__nav {
     flex-direction: column;
     align-items: center;
+    height: 70px;
   }
 }
 @media (max-width: 1250px) {
