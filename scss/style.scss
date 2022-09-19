@@ -56,16 +56,15 @@ body {
 	padding: 6px 20px 6px 20px;
 	border-radius: 10px;
 
-	transition-duration: 1s;
+	transition-duration: 1s, 1s, 0.5s, 0.5s;
+	transition-property: background-color, border-radius, color, padding, ;
 
 	&:hover {
-		color: $col-black;
 		background-color: #007254;
-
-		padding: 2px 20px 2px 20px;
 		border-radius: 30px;
 
-		transition-duration: 1s;
+		color: $col-black;
+		padding: 2px 20px 2px 20px;
 	}
 }
 
@@ -109,7 +108,7 @@ body {
 		justify-content: space-around;
 
 		&-link {
-			font-size: 25px;
+			font-size: 20px;
 		}
 	}
 }
@@ -153,7 +152,7 @@ body {
 		border-radius: $bord-rad;
 
 		&-link {
-			font-size: 20px;
+			font-size: 10px;
 		}
 	}
 
@@ -183,6 +182,10 @@ body {
 		font-size: 10px;
 		text-align: end;
 		margin: 5px 10px 0px 0px;
+
+		&-foto:hover {
+			color: white;
+		}
 	}
 }
 
