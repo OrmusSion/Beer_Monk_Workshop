@@ -8,61 +8,72 @@
 	font-style: normal;
 }
 
+// background-color: #007254;
+
 @import "_nullstyle";
 
 $bord-rad: 40px;
-$box-shad: 0 0 50px rgba(255, 255, 255, 0.7);
-$box-shad-but: 0 0 20px rgba(255, 255, 255, 0.7);
-$box-shad-page: 0 0 40px black;
 $col-black: #000;
 $col-green: #308b42;
 $col-darkgreen: #024d39;
 $col-white: #fff;
 
-%link-hov {
-	box-shadow: $box-shad-but;
-	background-color: $col-white;
-}
-
 %main-space {
-	background-color: $col-black;
-	box-shadow: $box-shad-page;
-	border-radius: $bord-rad;
-	color: $col-white;
 	flex: 1 1 auto;
-}
 
-%header-footer-space {
-	background-color: $col-black;
-	box-shadow: $box-shad-page;
-	border-radius: $bord-rad;
+	padding: 20px 0px 20px 0px;
 }
 
 body {
 	font-family: Orbitron, cursive;
-	// padding: 10px;
-	color: #fff;
+	background-color: $col-black;
+	color: $col-white;
 	height: 100%;
 }
 
 .page {
-	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 	overflow: hidden;
 }
 
-.container {
+[class*="__container"] {
 	max-width: 1500px;
 	margin: 0px auto;
 }
 
-.header {
-	@extend %header-footer-space;
+.ul {
+	display: flex;
+}
 
+.link {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: $col-white;
+	background-color: $col-darkgreen;
+
+	padding: 6px 20px 6px 20px;
+	border-radius: 10px;
+
+	transition-duration: 1s;
+
+	&:hover {
+		color: $col-black;
+		background-color: #007254;
+
+		padding: 2px 20px 2px 20px;
+		border-radius: 30px;
+
+		transition-duration: 1s;
+	}
+}
+
+.header {
 	height: 180px;
 	margin: 0px 0px 45px 0px;
+
+	border-bottom: 2px solid $col-darkgreen;
 
 	&__title {
 		text-align: center;
@@ -84,10 +95,8 @@ body {
 		width: 100%;
 		height: 70px;
 
-		background-color: $col-darkgreen;
 		border-radius: $bord-rad;
 
-		box-shadow: $box-shad;
 	}
 
 	&__img {
@@ -105,32 +114,16 @@ body {
 	}
 }
 
-.ul {
-	display: flex;
-}
-
-.link {
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	color: $col-white;
-
-	transition-duration: 1s;
-
-	&:hover {
-		color: $col-black;
-	}
-}
-
 .footer {
-	@extend %header-footer-space;
-
 	flex: 0 0 auto;
 
 	height: 150px;
-	margin: 30px 0px 10px 0px;
-	padding: 10px 0px 10px 0px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px 0px 0px 0px;
 
 	text-align: center;
+
+	border-top: 2px solid $col-darkgreen;
 
 	&__img {
 		width: 60px;
@@ -147,18 +140,17 @@ body {
 
 		margin: 0 auto;
 
-		width: 70%;
+		width: 100%;
 	}
 
 	&__nav {
 		justify-content: space-around;
 		align-items: center;
 
-		height: 50px;
+		height: 60px;
 		width: 100%;
 
-		background-color: $col-darkgreen;
-		border-radius: $bord-rad;		
+		border-radius: $bord-rad;
 
 		&-link {
 			font-size: 20px;
@@ -190,7 +182,7 @@ body {
 		color: $col-green;
 		font-size: 10px;
 		text-align: end;
-		margin: 5px 20px 0px 0px;
+		margin: 5px 10px 0px 0px;
 	}
 }
 

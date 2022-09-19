@@ -4,35 +4,28 @@
 	color: $col-black;
 }
 
-.header__nav-first-link .link:hover {
-	color: #7a7a7a;
-}
-
 .footer__nav-first-link .link {
 	color: $col-black;
-}
-
-.footer__nav-first-link .link:hover {
-	color: #7a7a7a;
 }
 
 .homepage {
 	@extend %main-space;
 
+	// &__container {
+	// }
+
 	&__title {
 		display: flex;
 		align-items: center;
-
-		padding: 10px 0px 0px 0px;
 	}
 
 	&__img {
 		width: 20%;
-		padding: 20px 20px;
+		padding: 10px 10px;
 	}
 
 	&__text {
-		margin: 0px 10px 0px 10px;
+		width: 80%;
 
 		font-size: 40px;
 		font-style: italic;

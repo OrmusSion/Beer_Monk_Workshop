@@ -80,34 +80,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.footer, .header {
-  background-color: #000;
-  box-shadow: 0 0 40px black;
-  border-radius: 40px;
-}
-
 body {
   font-family: Orbitron, cursive;
+  background-color: #000;
   color: #fff;
   height: 100%;
 }
 
 .page {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 }
 
-.container {
+[class*=__container] {
   max-width: 1500px;
   margin: 0px auto;
+}
+
+.ul {
+  display: flex;
+}
+
+.link {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  background-color: #024d39;
+  padding: 6px 20px 6px 20px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.link:hover {
+  color: #000;
+  background-color: #007254;
+  padding: 2px 20px 2px 20px;
+  border-radius: 30px;
+  transition-duration: 1s;
 }
 
 .header {
   height: 180px;
   margin: 0px 0px 45px 0px;
+  border-bottom: 2px solid #024d39;
 }
 .header__title {
   text-align: center;
@@ -123,9 +139,7 @@ body {
   align-items: center;
   width: 100%;
   height: 70px;
-  background-color: #024d39;
   border-radius: 40px;
-  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
 }
 .header__img {
   width: 15%;
@@ -139,26 +153,13 @@ body {
   font-size: 25px;
 }
 
-.ul {
-  display: flex;
-}
-
-.link {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #fff;
-  transition-duration: 1s;
-}
-.link:hover {
-  color: #000;
-}
-
 .footer {
   flex: 0 0 auto;
   height: 150px;
-  margin: 30px 0px 10px 0px;
-  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
+  border-top: 2px solid #024d39;
 }
 .footer__img {
   width: 60px;
@@ -171,14 +172,13 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 .footer__nav {
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
-  background-color: #024d39;
   border-radius: 40px;
 }
 .footer__nav-link {
@@ -188,7 +188,7 @@ body {
   color: #308b42;
   font-size: 10px;
   text-align: end;
-  margin: 5px 20px 0px 0px;
+  margin: 5px 10px 0px 0px;
 }
 
 @media (max-width: 1300px) {

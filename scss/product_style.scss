@@ -4,20 +4,12 @@
 	color: $col-black;
 }
 
-.header__nav-second-link .link:hover {
-	color: #7a7a7a;
-}
-
 .footer__nav-second-link .link {
 	color: $col-black;
 }
 
-.footer__nav-second-link .link:hover {
-	color: #7a7a7a;
-}
-
 .products {
-	@extend %main-space;	
+	@extend %main-space;
 }
 
 @import "_media";
