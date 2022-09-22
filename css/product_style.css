@@ -115,8 +115,8 @@ body {
   background-color: rgb(2, 77, 57);
   padding: 6px 20px 6px 20px;
   border-radius: 10px;
-  transition-duration: 1s, 1s, 0.5s, 0.5s;
-  transition-property: background-color, border-radius, color, padding;
+  transition-duration: 1s, 1s, 0.5s;
+  transition-property: color, border-radius, padding;
 }
 .link:hover {
   border-radius: 30px;
@@ -170,6 +170,7 @@ body {
   }
 }
 .header {
+  position: relative;
   height: 180px;
   margin: 0px 0px 45px 0px;
   border-bottom: 2px solid rgb(2, 77, 57);
@@ -203,8 +204,9 @@ body {
 }
 
 .footer {
+  position: relative;
   flex: 0 0 auto;
-  height: 205px;
+  height: 120px;
   margin: 0px 0px 20px 0px;
   padding: 10px 0px 0px 0px;
   text-align: center;
@@ -262,7 +264,10 @@ body {
   font-size: 10px;
 }
 .footer .footer__nav-social-action-button {
-  margin: 50px 0 0 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 50px 20px 10px 20px;
   display: block;
 }
 .footer .footer__nav-social-action-button img {
@@ -277,11 +282,13 @@ body {
   position: relative;
 }
 .footer__created {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   color: #308b42;
   font-size: 10px;
   text-align: end;
-  margin: 5px 10px 0px 0px;
+  margin: 5px 0px 5px 30px;
 }
 .footer__created-foto:hover {
   color: white;
@@ -439,7 +446,7 @@ body {
 
 @media (max-width: 767px) {
   .footer {
-    height: 302px;
+    height: 180px;
   }
 }
 @media (max-width: 767px) {
@@ -449,12 +456,6 @@ body {
     height: 120px;
   }
 }
-@media (max-width: 1500px) {
-  .footer__created {
-    border: 2px solid red;
-  }
-}
-
 .header__nav-second-link .link {
   color: #000;
 }
@@ -615,7 +616,7 @@ body {
 
 @media (max-width: 767px) {
   .footer {
-    height: 302px;
+    height: 180px;
   }
 }
 @media (max-width: 767px) {
@@ -623,10 +624,5 @@ body {
     flex-direction: column;
     align-items: center;
     height: 120px;
-  }
-}
-@media (max-width: 1500px) {
-  .footer__created {
-    border: 2px solid red;
   }
 }

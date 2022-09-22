@@ -58,8 +58,8 @@ body {
 	padding: 6px 20px 6px 20px;
 	border-radius: 10px;
 
-	transition-duration: 1s, 1s, 0.5s, 0.5s;
-	transition-property: background-color, border-radius, color, padding, ;
+	transition-duration: 1s, 1s, 0.5s, ;
+	transition-property: color, border-radius, padding;
 
 
 	&:hover {
@@ -99,10 +99,14 @@ body {
 }
 
 .header {
+	position: relative;
 	height: 180px;
 	margin: 0px 0px 45px 0px;
 
 	border-bottom: 2px solid $col-darkgreen;
+
+	// &__container {
+	// }
 
 	&__title {
 		text-align: center;
@@ -125,7 +129,6 @@ body {
 		height: 70px;
 
 		border-radius: $bord-rad;
-
 	}
 
 	&__img {
@@ -144,15 +147,17 @@ body {
 }
 
 .footer {
+	position: relative;
 	flex: 0 0 auto;
 
-	height: 205px;
+	height: 120px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px 0px 0px 0px;
 
 	text-align: center;
 
 	border-top: 2px solid $col-darkgreen;
+
 
 	@keyframes footer__img_rotate {
 		0% {
@@ -164,6 +169,9 @@ body {
 			transform: rotate(360deg);
 		}
 	}
+
+	// &__container {
+	// }
 
 	&__img {
 		width: 60px;
@@ -204,9 +212,11 @@ body {
 	}
 
 	.footer__nav-social-action-button {
-		// position: relative;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
 
-		margin: 50px 0 0 0;
+		margin: 0px 30px 10px 0px;
 
 
 		display: block;
@@ -230,11 +240,13 @@ body {
 
 
 	&__created {
-		position: relative;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
 		color: $col-green;
 		font-size: 10px;
 		text-align: end;
-		margin: 5px 10px 0px 0px;
+		margin: 0px 0px -5px 10px;
 
 		&-foto:hover {
 			color: white;

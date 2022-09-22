@@ -162,7 +162,7 @@
 
 .footer {
 	@media (max-width:767px) {
-		height: 302px;
+		height: 180px;
 	}
 
 	&__nav {
@@ -174,9 +174,6 @@
 	}
 
 	&__created {
-		@media (max-width: 1500px) {
-			border: 2px solid red;
-		}
-
+		@media (max-width: 1500px) {}
 	}
 }
