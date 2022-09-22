@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: Orbitron, cursive;
-  background-color: #0f0f0f;
+  background-color: #1a1a1a;
   color: #fff;
   height: 100%;
 }
@@ -107,23 +107,67 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #fff;
-  background-color: #024d39;
+  background-color: rgb(2, 77, 57);
   padding: 6px 20px 6px 20px;
   border-radius: 10px;
   transition-duration: 1s, 1s, 0.5s, 0.5s;
   transition-property: background-color, border-radius, color, padding;
 }
 .link:hover {
-  background-color: #007254;
   border-radius: 30px;
   color: #000;
   padding: 2px 20px 2px 20px;
+  -webkit-animation-name: header__link-decoration;
+          animation-name: header__link-decoration;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
+@-webkit-keyframes header__link-decoration {
+  0% {
+    box-shadow: 0 0 10px #00c48f;
+  }
+  15% {
+    box-shadow: 0 0 20px #fff;
+  }
+  50% {
+    box-shadow: 0 0 30px #00c48f;
+  }
+  85% {
+    box-shadow: 0 0 40px #fff;
+  }
+  100% {
+    box-shadow: 0 0 50px #00c48f;
+  }
+}
+
+@keyframes header__link-decoration {
+  0% {
+    box-shadow: 0 0 10px #00c48f;
+  }
+  15% {
+    box-shadow: 0 0 20px #fff;
+  }
+  50% {
+    box-shadow: 0 0 30px #00c48f;
+  }
+  85% {
+    box-shadow: 0 0 40px #fff;
+  }
+  100% {
+    box-shadow: 0 0 50px #00c48f;
+  }
+}
 .header {
   height: 180px;
   margin: 0px 0px 45px 0px;
-  border-bottom: 2px solid #024d39;
+  border-bottom: 2px solid rgb(2, 77, 57);
 }
 .header__title {
   text-align: center;
@@ -155,29 +199,11 @@ body {
 
 .footer {
   flex: 0 0 auto;
-  height: 100px;
+  height: 205px;
   margin: 0px 0px 20px 0px;
   padding: 10px 0px 0px 0px;
   text-align: center;
-  border-top: 2px solid #024d39;
-}
-.footer__img {
-  width: 60px;
-  height: 60px;
-  margin: 0px 0px 10px 0px;
-  position: relative;
-  -webkit-animation-name: footer__img_rotate;
-          animation-name: footer__img_rotate;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.footer__img:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  border-top: 2px solid rgb(2, 77, 57);
 }
 @-webkit-keyframes footer__img_rotate {
   0% {
@@ -197,6 +223,23 @@ body {
     transform: rotate(360deg);
   }
 }
+.footer__img {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px 10px 0px;
+  -webkit-animation-name: footer__img_rotate;
+          animation-name: footer__img_rotate;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.footer__img:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 .footer__panel {
   display: flex;
   flex-direction: column;
@@ -213,7 +256,23 @@ body {
 .footer__nav-link {
   font-size: 10px;
 }
+.footer .footer__nav-social-action-button {
+  margin: 50px 0 0 0;
+  display: block;
+}
+.footer .footer__nav-social-action-button img {
+  width: 50px;
+  height: 50px;
+}
+.footer .footer__nav-social img {
+  width: 30px;
+  height: 30px;
+}
+.footer .footer__nav-social {
+  position: relative;
+}
 .footer__created {
+  position: relative;
   color: #308b42;
   font-size: 10px;
   text-align: end;
@@ -375,7 +434,7 @@ body {
 
 @media (max-width: 767px) {
   .footer {
-    height: 202px;
+    height: 302px;
   }
 }
 @media (max-width: 767px) {
@@ -383,5 +442,10 @@ body {
     flex-direction: column;
     align-items: center;
     height: 120px;
+  }
+}
+@media (max-width: 1500px) {
+  .footer__created {
+    border: 2px solid red;
   }
 }
