@@ -206,7 +206,7 @@ body {
 .footer {
   position: relative;
   flex: 0 0 auto;
-  height: 120px;
+  height: 160px;
   margin: 0px 0px 20px 0px;
   padding: 10px 0px 0px 0px;
   text-align: center;
@@ -247,39 +247,32 @@ body {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
-.footer__panel {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
+.footer__nav-social {
+  transition-duration: 5s;
 }
-.footer__nav {
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-.footer__nav-link {
-  font-size: 10px;
-}
-.footer .footer__nav-social-action-button {
+.footer__nav-social-action-button {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  margin: 50px 20px 10px 20px;
+  width: 40px;
+  height: 40px;
+  margin: 0px 30px 10px 0px;
+}
+.footer__nav-social-action-button:active {
+  transition-duration: 5s;
+}
+.footer__nav-social:active .footer__nav-social-link {
   display: block;
+  visibility: visible;
 }
-.footer .footer__nav-social-action-button img {
-  width: 50px;
-  height: 50px;
-}
-.footer .footer__nav-social img {
+.footer__nav-social-link {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
-.footer .footer__nav-social {
-  position: relative;
+.footer__nav-social-link:hover {
+  display: block;
+  visibility: visible;
 }
 .footer__created {
   position: absolute;
@@ -288,10 +281,50 @@ body {
   color: #308b42;
   font-size: 10px;
   text-align: end;
-  margin: 5px 0px 5px 30px;
+  margin: 0px 0px -5px 10px;
 }
 .footer__created-foto:hover {
   color: white;
+}
+
+.link-img-01 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 125px 5px 0;
+  visibility: hidden;
+  background: url("../img/svg/facebook-green.svg") center no-repeat;
+  background-size: 30px;
+}
+
+.link-img-02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 105px 50px 0;
+  visibility: hidden;
+  background: url("../img/svg/instagram-green.svg") center no-repeat;
+  background-size: 30px;
+}
+
+.link-img-03 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 70px 85px 0;
+  visibility: hidden;
+  background: url("../img/svg/telegram.svg") center no-repeat;
+  background-size: 30px;
+}
+
+.link-img-04 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 25px 105px 0;
+  visibility: hidden;
+  background: url("../img/svg/viber.svg") center no-repeat;
+  background-size: 30px;
 }
 
 @media (max-width: 1050px) {
@@ -457,10 +490,6 @@ body {
   }
 }
 .header__nav-four-link .link {
-  color: #000;
-}
-
-.footer__nav-four-link .link {
   color: #000;
 }
 

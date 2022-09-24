@@ -4,10 +4,6 @@
 	color: $col-black;
 }
 
-.footer__nav-first-link .link {
-	color: $col-black;
-}
-
 .homepage {
 	@extend %main-space;
 
@@ -40,7 +36,23 @@
 		}
 
 		&-img {
-			margin: 5px 0px 0px -15px;
+			margin: 15px 0px 0px -20px;
+
+			animation-name: hop_rotate;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		@keyframes hop_rotate {
+			0% {
+				transform: rotate(30deg);
+			}
+
+			100% {
+				transform: rotate(-30deg);
+			}
 		}
 	}
 

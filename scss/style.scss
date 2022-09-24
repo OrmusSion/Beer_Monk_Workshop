@@ -150,14 +150,13 @@ body {
 	position: relative;
 	flex: 0 0 auto;
 
-	height: 120px;
+	height: 160px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px 0px 0px 0px;
 
 	text-align: center;
 
 	border-top: 2px solid $col-darkgreen;
-
 
 	@keyframes footer__img_rotate {
 		0% {
@@ -170,8 +169,7 @@ body {
 		}
 	}
 
-	// &__container {
-	// }
+	// &__container {}
 
 	&__img {
 		width: 60px;
@@ -189,55 +187,20 @@ body {
 		animation-play-state: paused;
 	}
 
-	&__panel {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		align-items: center;
+	// &__panel {}
 
-		margin: 0 auto;
+	// &__nav {}
 
-		width: 100%;
-	}
+	// &__nav-social {}
 
-	&__nav {
-		justify-content: space-around;
-		align-items: center;
+	// &__nav-social-link {}
 
-		width: 100%;
-
-		&-link {
-			font-size: 10px;
-		}
-	}
-
-	.footer__nav-social-action-button {
-		position: absolute;
-		right: 0px;
-		bottom: 0px;
-
-		margin: 0px 30px 10px 0px;
-
-
-		display: block;
-		// margin-left: -28px;
-	}
-
-	.footer__nav-social-action-button img {
-		width: 50px;
-		height: 50px;
-	}
-
-	.footer__nav-social img {
+	&__nav-social-link-img {
 		width: 30px;
 		height: 30px;
+
+		border-radius: 50%;
 	}
-
-	.footer__nav-social {
-		position: relative;
-	}
-
-
 
 	&__created {
 		position: absolute;
@@ -254,19 +217,50 @@ body {
 	}
 }
 
+.img-link-01 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	margin: 0 125px 5px 0;
+
+	background: url("../img/svg/facebook-green.svg") center no-repeat;
+	background-size: 30px;
+}
+
+.img-link-02 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	margin: 0 105px 50px 0;
+
+	background: url("../img/svg/instagram-green.svg") center no-repeat;
+	background-size: 30px;
+}
+
+.img-link-03 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	margin: 0 70px 85px 0;
+
+	background: url("../img/svg/telegram.svg") center no-repeat;
+	background-size: 30px;
+}
+
+.img-link-04 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	margin: 0 25px 105px 0;
+
+	background: url("../img/svg/viber.svg") center no-repeat;
+	background-size: 30px;
+}
+
+
+
 @import "_media";
-
-// &__nav-social-link {
-// 	border-radius: 50%;
-// 	transition-duration: 1s;
-
-// 	&:hover {
-// 		@extend %link-hov;
-// 	}
-// }
-
-// &__nav-social-link {
-// 	width: 30px;
-// 	height: 30px;
-// 	margin: 5px 10px;
-// }
