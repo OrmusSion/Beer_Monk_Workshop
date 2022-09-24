@@ -247,32 +247,10 @@ body {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
-.footer__nav-social {
-  transition-duration: 5s;
-}
-.footer__nav-social-action-button {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 40px;
-  height: 40px;
-  margin: 0px 30px 10px 0px;
-}
-.footer__nav-social-action-button:active {
-  transition-duration: 5s;
-}
-.footer__nav-social:active .footer__nav-social-link {
-  display: block;
-  visibility: visible;
-}
-.footer__nav-social-link {
+.footer__nav-social-link-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-}
-.footer__nav-social-link:hover {
-  display: block;
-  visibility: visible;
 }
 .footer__created {
   position: absolute;
@@ -287,42 +265,38 @@ body {
   color: white;
 }
 
-.link-img-01 {
+.img-link-01 {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 125px 5px 0;
-  visibility: hidden;
   background: url("../img/svg/facebook-green.svg") center no-repeat;
   background-size: 30px;
 }
 
-.link-img-02 {
+.img-link-02 {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 105px 50px 0;
-  visibility: hidden;
   background: url("../img/svg/instagram-green.svg") center no-repeat;
   background-size: 30px;
 }
 
-.link-img-03 {
+.img-link-03 {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 70px 85px 0;
-  visibility: hidden;
   background: url("../img/svg/telegram.svg") center no-repeat;
   background-size: 30px;
 }
 
-.link-img-04 {
+.img-link-04 {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 25px 105px 0;
-  visibility: hidden;
   background: url("../img/svg/viber.svg") center no-repeat;
   background-size: 30px;
 }

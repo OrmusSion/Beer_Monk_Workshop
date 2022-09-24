@@ -247,6 +247,36 @@ body {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
+.footer__nav-social-action-button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 10px 0;
+}
+.footer__nav-social-action-button:hover {
+  -webkit-animation-name: social__decor;
+          animation-name: social__decor;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes social__decor {
+  100% {
+    transform: rotate(60deg);
+  }
+}
+@keyframes social__decor {
+  100% {
+    transform: rotate(60deg);
+  }
+}
 .footer__nav-social-link-img {
   width: 30px;
   height: 30px;
@@ -489,7 +519,7 @@ body {
   color: #308b42;
 }
 .homepage__text-img {
-  margin: 15px 0px 0px -20px;
+  margin: 10px 0px 0px -20px;
   -webkit-animation-name: hop_rotate;
           animation-name: hop_rotate;
   -webkit-animation-duration: 1.5s;

@@ -193,6 +193,35 @@ body {
 
 	// &__nav-social {}
 
+	&__nav-social-action-button {
+		width: 40px;
+		height: 40px;
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		margin: 0 30px 10px 0;
+
+		&:hover {
+			animation-name: social__decor;
+			animation-duration: 0.3s;
+			animation-timing-function: linear;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+		}
+	}
+
+	@keyframes social__decor {
+		0% {
+			// transform: rotate(30deg);
+		}
+
+		100% {
+			transform: rotate(60deg);
+		}
+	}
+
 	// &__nav-social-link {}
 
 	&__nav-social-link-img {
@@ -260,7 +289,5 @@ body {
 	background: url("../img/svg/viber.svg") center no-repeat;
 	background-size: 30px;
 }
-
-
 
 @import "_media";
