@@ -160,12 +160,12 @@ body {
 
 	@keyframes footer__img_rotate {
 		0% {
-			top: 0;
+			transform: scale(0.75);
 		}
 
 		100% {
-			top: 0;
-			transform: rotate(360deg);
+			// transform: rotate(360deg);
+			transform: scale(1.25);
 		}
 	}
 
@@ -178,8 +178,9 @@ body {
 		margin: 0px 0px 10px 0px;
 
 		animation-name: footer__img_rotate;
-		animation-duration: 3s;
-		animation-timing-function: linear;
+		animation-duration: 1.3s;
+		animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+		animation-direction: alternate;
 		animation-iteration-count: infinite;
 	}
 
