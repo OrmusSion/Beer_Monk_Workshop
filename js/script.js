@@ -1,19 +1,26 @@
 "use strict";
 
-console.log("Hop Monk " + "Beer");
+console.log("Hop Monk");
 
-function test() {
-	console.log ("test 1");
-	console.log ("test 2");
+let Monk = "Hop Monk";
+console.log(Monk);
+
+// function text(word1, word2) {
+// 	// let word1 = "Monk";
+// 	// let word2 = "Beer";
+
+// 	console.log(word1 + " " + word2);
+// }
+
+// text(1, 2);
+
+function formul(num1,num2) {
+	// let word1 = "Monk";
+	// let word2 = "Beer";
+
+	// let sum = num1**2 + num2**2;
+	let sum = Math.sqrt(num1 ** 2 + num2 ** 2);
+	console.log(sum);
 }
 
-test();
-
-let userName = "20";
-let userPass = "183461";
-
-console.log (userName);
-
-userName = userPass;
-
-console.log (userName);
+formul(5,10);
