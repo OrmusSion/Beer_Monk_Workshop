@@ -1,18 +1,24 @@
 "use strict";
+// const nmnmnm = document.querySelector(".footer__nav-social-action-button");
 
-console.log("Hop Monk");
+// console.log(nmnmnm);
+// nmnmnm.classList.toggle('aaa');
 
-let Monk = "Hop Monk";
-console.log(Monk);
 
-function text(word1,word2) {
-	// let word1 = "Monk";
-	// let word2 = "Beer";
 
-	console.log(word1 + " " + word2);
-}
+// console.log("Hop Monk");
 
-text("Monk","Beer");
+// let Monk = "Hop Monk";
+// console.log(Monk);
+
+// function text(word1,word2) {
+// 	// let word1 = "Monk";
+// 	// let word2 = "Beer";
+
+// 	console.log(word1 + " " + word2);
+// }
+
+// text("Monk","Beer");
 
 // function formul(num1,num2) {
 // 	if (num2 > num1) {
@@ -104,7 +110,7 @@ text("Monk","Beer");
 // let result = arr.find(function(item, index, array){
 // 	return item.age === 50;
 // 	// return index == 3;
-// 	// return item.name == 'dzd';	
+// 	// return item.name == 'dzd';
 // })
 
 // console.log(result);
@@ -182,3 +188,45 @@ text("Monk","Beer");
 // let sesds = 'van,ish,ol';
 // let asdsad = sesds.split(',');
 // console.log(asdsad);
+
+// const textElement = document.querySelector('.contact__title__text');
+// console.log(textElement);
+
+// const ttttt = textElement.innerHTML;
+
+// console.log(ttttt);
+
+// textElement.innerHTML = `<p>${ttttt}</p> <p>azaza</p>`;
+
+// const newElement = document.createElement('div');
+
+// newElement.innerHTML = 'Gork and Mork';
+
+// console.log(newElement);
+
+// textElement.before(newElement);
+
+// const newElement2 = document.createElement('div');
+
+// newElement2.innerHTML = `${newElement.innerHTML} WAAAAAAAAGH!!!!!`;
+
+// textElement.after(newElement2);
+
+// const fgfgfg = textElement.nextSibling;
+
+// console.log(fgfgfg);
+
+// textElement.insertAdjacentHTML(
+// 	'afterend', `<p>
+// 		asdsadasdasdasdasdsad
+// 	</p>`
+// );
+
+// const removeElement = document.querySelector('.contact__body');
+
+// removeElement.remove();
+
+// const nmnmnm = document.querySelector(".footer__nav-social-action-button");
+
+// console.log(nmnmnm);
+// nmnmnm.classList.toggle('aaa');

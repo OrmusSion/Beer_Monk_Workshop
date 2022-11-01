@@ -169,7 +169,8 @@ body {
 		}
 	}
 
-	// &__container {}
+	// &__container {
+	//}
 
 	&__img {
 		width: 60px;
@@ -205,11 +206,12 @@ body {
 		margin: 0 30px 10px 0;
 
 		&:hover {
-			animation-name: social__decor;
-			animation-duration: 0.3s;
-			animation-timing-function: linear;
-			animation-fill-mode: forwards;
-			animation-direction: alternate;
+			// animation-name: social__decor;
+			// animation-duration: 0.3s;
+			// animation-timing-function: linear;
+			// animation-fill-mode: forwards;
+			// animation-direction: alternate;
+			transform: rotate(60deg);
 		}
 	}
 
@@ -219,7 +221,7 @@ body {
 		}
 
 		100% {
-			transform: rotate(60deg);
+			// transform: rotate(60deg);
 		}
 	}
 

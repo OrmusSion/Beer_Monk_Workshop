@@ -256,27 +256,10 @@ body {
   margin: 0 30px 10px 0;
 }
 .footer__nav-social-action-button:hover {
-  -webkit-animation-name: social__decor;
-          animation-name: social__decor;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  transform: rotate(60deg);
 }
-@-webkit-keyframes social__decor {
-  100% {
-    transform: rotate(60deg);
-  }
-}
-@keyframes social__decor {
-  100% {
-    transform: rotate(60deg);
-  }
-}
+@-webkit-keyframes social__decor {}
+@keyframes social__decor {}
 .footer__nav-social-link-img {
   width: 30px;
   height: 30px;
@@ -497,41 +480,33 @@ body {
   color: #000;
 }
 
-.tools__circle {
-  height: 50px;
-  width: 50px;
-  background: url("../img/hop-logo-green.png");
-  background-size: 50px 50px;
+.tools {
   position: relative;
-  -webkit-animation-name: white-circle;
-          animation-name: white-circle;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes white-circle {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 0;
-    transform: rotate(360deg);
-  }
+.texttools {
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  line-height: 60px;
 }
 
-@keyframes white-circle {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 0;
-    transform: rotate(360deg);
-  }
+.return__button {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: fixed;
+  top: 850px;
+  right: 70px;
+  visibility: hidden;
 }
+
+.active__button {
+  visibility: visible;
+}
+
 @media (max-width: 1050px) {
   .header {
     margin: 0px 0px 10px 0px;

@@ -251,27 +251,10 @@ body {
   margin: 0 30px 10px 0;
 }
 .footer__nav-social-action-button:hover {
-  -webkit-animation-name: social__decor;
-          animation-name: social__decor;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  transform: rotate(60deg);
 }
-@-webkit-keyframes social__decor {
-  100% {
-    transform: rotate(60deg);
-  }
-}
-@keyframes social__decor {
-  100% {
-    transform: rotate(60deg);
-  }
-}
+@-webkit-keyframes social__decor {}
+@keyframes social__decor {}
 .footer__nav-social-link-img {
   width: 30px;
   height: 30px;
